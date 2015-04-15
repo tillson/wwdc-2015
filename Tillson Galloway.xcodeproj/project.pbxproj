@@ -1,0 +1,515 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C511404B1ADDC6AD00D76B7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C511404A1ADDC6AD00D76B7E /* AppDelegate.swift */; };
+		C51140521ADDC6AD00D76B7E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C51140511ADDC6AD00D76B7E /* Images.xcassets */; };
+		C51140551ADDC6AD00D76B7E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C51140531ADDC6AD00D76B7E /* LaunchScreen.xib */; };
+		C51140611ADDC6AD00D76B7E /* Tillson_GallowayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51140601ADDC6AD00D76B7E /* Tillson_GallowayTests.swift */; };
+		C511406B1ADDC73200D76B7E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C511406A1ADDC73200D76B7E /* ViewController.swift */; };
+		C511406D1ADDC74500D76B7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C511406C1ADDC74500D76B7E /* Main.storyboard */; };
+		C511406F1ADDC74E00D76B7E /* CircleScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C511406E1ADDC74E00D76B7E /* CircleScene.swift */; };
+		C51140721ADDC7A300D76B7E /* OpeningTransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51140701ADDC7A300D76B7E /* OpeningTransitionManager.swift */; };
+		C51140731ADDC7A300D76B7E /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51140711ADDC7A300D76B7E /* Utilities.swift */; };
+		C51140791ADDFEC000D76B7E /* CardObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51140781ADDFEC000D76B7E /* CardObject.swift */; };
+		C511407F1ADDFFB300D76B7E /* PassbookLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = C511407E1ADDFFB300D76B7E /* PassbookLayout.m */; };
+		C51140811ADE0C4100D76B7E /* PassCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = C51140801ADE0C4100D76B7E /* PassCard.xib */; };
+		C51140841ADE180900D76B7E /* CabinetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51140831ADE180900D76B7E /* CabinetViewController.swift */; };
+		C51140861ADE184800D76B7E /* PassCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51140851ADE184800D76B7E /* PassCard.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C511405B1ADDC6AD00D76B7E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C511403D1ADDC6AC00D76B7E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C51140441ADDC6AC00D76B7E;
+			remoteInfo = "Tillson Galloway";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C51140451ADDC6AD00D76B7E /* Tillson Galloway.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tillson Galloway.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C51140491ADDC6AD00D76B7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C511404A1ADDC6AD00D76B7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C51140511ADDC6AD00D76B7E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C51140541ADDC6AD00D76B7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		C511405A1ADDC6AD00D76B7E /* Tillson GallowayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tillson GallowayTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C511405F1ADDC6AD00D76B7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C51140601ADDC6AD00D76B7E /* Tillson_GallowayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tillson_GallowayTests.swift; sourceTree = "<group>"; };
+		C511406A1ADDC73200D76B7E /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C511406C1ADDC74500D76B7E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		C511406E1ADDC74E00D76B7E /* CircleScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleScene.swift; sourceTree = "<group>"; };
+		C51140701ADDC7A300D76B7E /* OpeningTransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpeningTransitionManager.swift; sourceTree = "<group>"; };
+		C51140711ADDC7A300D76B7E /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		C51140781ADDFEC000D76B7E /* CardObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardObject.swift; sourceTree = "<group>"; };
+		C511407C1ADDFFB200D76B7E /* Tillson Galloway-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tillson Galloway-Bridging-Header.h"; sourceTree = "<group>"; };
+		C511407D1ADDFFB300D76B7E /* PassbookLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PassbookLayout.h; sourceTree = "<group>"; };
+		C511407E1ADDFFB300D76B7E /* PassbookLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PassbookLayout.m; sourceTree = "<group>"; };
+		C51140801ADE0C4100D76B7E /* PassCard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PassCard.xib; sourceTree = "<group>"; };
+		C51140831ADE180900D76B7E /* CabinetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CabinetViewController.swift; sourceTree = "<group>"; };
+		C51140851ADE184800D76B7E /* PassCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassCard.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C51140421ADDC6AC00D76B7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C51140571ADDC6AD00D76B7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C511403C1ADDC6AC00D76B7E = {
+			isa = PBXGroup;
+			children = (
+				C51140471ADDC6AD00D76B7E /* Tillson Galloway */,
+				C511405D1ADDC6AD00D76B7E /* Tillson GallowayTests */,
+				C51140461ADDC6AD00D76B7E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C51140461ADDC6AD00D76B7E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C51140451ADDC6AD00D76B7E /* Tillson Galloway.app */,
+				C511405A1ADDC6AD00D76B7E /* Tillson GallowayTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C51140471ADDC6AD00D76B7E /* Tillson Galloway */ = {
+			isa = PBXGroup;
+			children = (
+				C51140821ADE156600D76B7E /* Assets */,
+				C51140771ADDFB6500D76B7E /* Modal */,
+				C51140761ADDC80900D76B7E /* View */,
+				C51140741ADDC7E300D76B7E /* Controller */,
+				C51140751ADDC7F700D76B7E /* Utilities */,
+				C511404A1ADDC6AD00D76B7E /* AppDelegate.swift */,
+				C51140481ADDC6AD00D76B7E /* Supporting Files */,
+			);
+			path = "Tillson Galloway";
+			sourceTree = "<group>";
+		};
+		C51140481ADDC6AD00D76B7E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C511407C1ADDFFB200D76B7E /* Tillson Galloway-Bridging-Header.h */,
+				C51140491ADDC6AD00D76B7E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C511405D1ADDC6AD00D76B7E /* Tillson GallowayTests */ = {
+			isa = PBXGroup;
+			children = (
+				C51140601ADDC6AD00D76B7E /* Tillson_GallowayTests.swift */,
+				C511405E1ADDC6AD00D76B7E /* Supporting Files */,
+			);
+			path = "Tillson GallowayTests";
+			sourceTree = "<group>";
+		};
+		C511405E1ADDC6AD00D76B7E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C511405F1ADDC6AD00D76B7E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C51140741ADDC7E300D76B7E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C511406E1ADDC74E00D76B7E /* CircleScene.swift */,
+				C511406A1ADDC73200D76B7E /* ViewController.swift */,
+				C51140831ADE180900D76B7E /* CabinetViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		C51140751ADDC7F700D76B7E /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				C511407A1ADDFFA100D76B7E /* APIs */,
+				C51140711ADDC7A300D76B7E /* Utilities.swift */,
+				C51140701ADDC7A300D76B7E /* OpeningTransitionManager.swift */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		C51140761ADDC80900D76B7E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C511406C1ADDC74500D76B7E /* Main.storyboard */,
+				C51140801ADE0C4100D76B7E /* PassCard.xib */,
+				C51140531ADDC6AD00D76B7E /* LaunchScreen.xib */,
+				C51140851ADE184800D76B7E /* PassCard.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		C51140771ADDFB6500D76B7E /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				C51140781ADDFEC000D76B7E /* CardObject.swift */,
+			);
+			name = Modal;
+			sourceTree = "<group>";
+		};
+		C511407A1ADDFFA100D76B7E /* APIs */ = {
+			isa = PBXGroup;
+			children = (
+				C511407B1ADDFFA700D76B7E /* Objective-C */,
+			);
+			name = APIs;
+			sourceTree = "<group>";
+		};
+		C511407B1ADDFFA700D76B7E /* Objective-C */ = {
+			isa = PBXGroup;
+			children = (
+				C511407D1ADDFFB300D76B7E /* PassbookLayout.h */,
+				C511407E1ADDFFB300D76B7E /* PassbookLayout.m */,
+			);
+			name = "Objective-C";
+			sourceTree = "<group>";
+		};
+		C51140821ADE156600D76B7E /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				C51140511ADDC6AD00D76B7E /* Images.xcassets */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C51140441ADDC6AC00D76B7E /* Tillson Galloway */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C51140641ADDC6AD00D76B7E /* Build configuration list for PBXNativeTarget "Tillson Galloway" */;
+			buildPhases = (
+				C51140411ADDC6AC00D76B7E /* Sources */,
+				C51140421ADDC6AC00D76B7E /* Frameworks */,
+				C51140431ADDC6AC00D76B7E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Tillson Galloway";
+			productName = "Tillson Galloway";
+			productReference = C51140451ADDC6AD00D76B7E /* Tillson Galloway.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C51140591ADDC6AD00D76B7E /* Tillson GallowayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C51140671ADDC6AD00D76B7E /* Build configuration list for PBXNativeTarget "Tillson GallowayTests" */;
+			buildPhases = (
+				C51140561ADDC6AD00D76B7E /* Sources */,
+				C51140571ADDC6AD00D76B7E /* Frameworks */,
+				C51140581ADDC6AD00D76B7E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C511405C1ADDC6AD00D76B7E /* PBXTargetDependency */,
+			);
+			name = "Tillson GallowayTests";
+			productName = "Tillson GallowayTests";
+			productReference = C511405A1ADDC6AD00D76B7E /* Tillson GallowayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C511403D1ADDC6AC00D76B7E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Tillson Galloway";
+				TargetAttributes = {
+					C51140441ADDC6AC00D76B7E = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					C51140591ADDC6AD00D76B7E = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = C51140441ADDC6AC00D76B7E;
+					};
+				};
+			};
+			buildConfigurationList = C51140401ADDC6AC00D76B7E /* Build configuration list for PBXProject "Tillson Galloway" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C511403C1ADDC6AC00D76B7E;
+			productRefGroup = C51140461ADDC6AD00D76B7E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C51140441ADDC6AC00D76B7E /* Tillson Galloway */,
+				C51140591ADDC6AD00D76B7E /* Tillson GallowayTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C51140431ADDC6AC00D76B7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C511406D1ADDC74500D76B7E /* Main.storyboard in Resources */,
+				C51140551ADDC6AD00D76B7E /* LaunchScreen.xib in Resources */,
+				C51140811ADE0C4100D76B7E /* PassCard.xib in Resources */,
+				C51140521ADDC6AD00D76B7E /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C51140581ADDC6AD00D76B7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C51140411ADDC6AC00D76B7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C51140791ADDFEC000D76B7E /* CardObject.swift in Sources */,
+				C511407F1ADDFFB300D76B7E /* PassbookLayout.m in Sources */,
+				C51140721ADDC7A300D76B7E /* OpeningTransitionManager.swift in Sources */,
+				C51140841ADE180900D76B7E /* CabinetViewController.swift in Sources */,
+				C51140861ADE184800D76B7E /* PassCard.swift in Sources */,
+				C511406B1ADDC73200D76B7E /* ViewController.swift in Sources */,
+				C511404B1ADDC6AD00D76B7E /* AppDelegate.swift in Sources */,
+				C51140731ADDC7A300D76B7E /* Utilities.swift in Sources */,
+				C511406F1ADDC74E00D76B7E /* CircleScene.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C51140561ADDC6AD00D76B7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C51140611ADDC6AD00D76B7E /* Tillson_GallowayTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C511405C1ADDC6AD00D76B7E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C51140441ADDC6AC00D76B7E /* Tillson Galloway */;
+			targetProxy = C511405B1ADDC6AD00D76B7E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C51140531ADDC6AD00D76B7E /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C51140541ADDC6AD00D76B7E /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C51140621ADDC6AD00D76B7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C51140631ADDC6AD00D76B7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C51140651ADDC6AD00D76B7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = "Tillson Galloway/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Tillson Galloway/Tillson Galloway-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C51140661ADDC6AD00D76B7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = "Tillson Galloway/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Tillson Galloway/Tillson Galloway-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		C51140681ADDC6AD00D76B7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Tillson GallowayTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tillson Galloway.app/Tillson Galloway";
+			};
+			name = Debug;
+		};
+		C51140691ADDC6AD00D76B7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Tillson GallowayTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tillson Galloway.app/Tillson Galloway";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C51140401ADDC6AC00D76B7E /* Build configuration list for PBXProject "Tillson Galloway" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C51140621ADDC6AD00D76B7E /* Debug */,
+				C51140631ADDC6AD00D76B7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C51140641ADDC6AD00D76B7E /* Build configuration list for PBXNativeTarget "Tillson Galloway" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C51140651ADDC6AD00D76B7E /* Debug */,
+				C51140661ADDC6AD00D76B7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C51140671ADDC6AD00D76B7E /* Build configuration list for PBXNativeTarget "Tillson GallowayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C51140681ADDC6AD00D76B7E /* Debug */,
+				C51140691ADDC6AD00D76B7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C511403D1ADDC6AC00D76B7E /* Project object */;
+}
