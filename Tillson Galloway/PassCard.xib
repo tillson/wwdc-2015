@@ -16,8 +16,8 @@
                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XvU-0g-Rac" userLabel="Container">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="420"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pass-mockup-red" translatesAutoresizingMaskIntoConstraints="NO" id="GHs-rZ-e3m" customClass="I">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="420"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pass-mockup-red" translatesAutoresizingMaskIntoConstraints="NO" id="GHs-rZ-e3m">
+                                <rect key="frame" x="0.0" y="8" width="375" height="412"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fGw-sq-cdg">
                                 <rect key="frame" x="44" y="81" width="287" height="296"/>
@@ -41,6 +41,7 @@
             <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <size key="customSize" width="305" height="544"/>
             <connections>
+                <outlet property="cardBackground" destination="GHs-rZ-e3m" id="8sw-NP-JEg"/>
                 <outlet property="cardBody" destination="fGw-sq-cdg" id="nXZ-1E-wOA"/>
                 <outlet property="cardTitle" destination="GgI-EW-Ety" id="cDi-KA-0Jg"/>
             </connections>

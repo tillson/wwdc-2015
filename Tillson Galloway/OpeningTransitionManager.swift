@@ -63,16 +63,3 @@ class OpeningTransitionManager: NSObject, UIViewControllerAnimatedTransitioning 
     }
     
 }
-
-//extension TransitionManager: UIViewControllerTransitioningDelegate {
-//    
-//    func animationControllerForPresentedController(presented: UIViewController, presentingController presenting: UIViewController, sourceController source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-//        println("we work on...")
-//        return self
-//    }
-//    
-//    // return the animator used when dismissing from a viewcontroller
-//    func animationControllerForDismissedController(dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-//        return self
-//    }
-//}

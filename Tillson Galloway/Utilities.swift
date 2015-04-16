@@ -11,6 +11,7 @@ import UIKit
 extension UIView {
     
     func getImage() -> UIImage {
+        
         UIGraphicsBeginImageContextWithOptions(self.bounds.size, self.opaque, 0.0)
         self.layer.renderInContext(UIGraphicsGetCurrentContext())
         let image = UIGraphicsGetImageFromCurrentImageContext()

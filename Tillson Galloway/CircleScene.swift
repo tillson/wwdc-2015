@@ -16,7 +16,7 @@ class CircleScene: SKScene {
     override init(size: CGSize) {
         super.init(size: size)
         
-        backgroundColor = SKColor.fromRGB(0xEAE7EA)
+        backgroundColor = SKColor.fromRGB(0xE4E0E4)
         setupBall()
     }
 

@@ -49,10 +49,10 @@
     m.normal.size       = CGSizeMake(375.0, 420.0);
     m.normal.overlap    = 0.0;
     m.collapsed.size    = CGSizeMake(375.0, 96.0);
-    m.collapsed.overlap = 32.0;
+    m.collapsed.overlap = 16.0;
     
     m.bottomStackedHeight = 8.0;
-    m.bottomStackedTotalHeight = 32.0;
+    m.bottomStackedTotalHeight = 16.0;
     
     e.inheritance       = 0.20;
     e.sticksTop         = YES;
@@ -81,6 +81,12 @@
     UICollectionViewLayoutAttributes *attributes = [UICollectionViewLayoutAttributes layoutAttributesForCellWithIndexPath:indexPath];
     
     NSArray *selectedIndexPaths = [self.collectionView indexPathsForSelectedItems];
+    
+    if (indexPath.item == 0) {
+        UIWindow *window = ([UIApplication sharedApplication].delegate).window;
+        attributes.frame = CGRectMake(0, 0, window.frame.size.width, 55);
+        return attributes;
+    }
     
     if (selectedIndexPaths.count && [(NSIndexPath*)selectedIndexPaths[0] isEqual:indexPath])
     {
@@ -175,13 +181,13 @@ CGRect frameForPassAtIndex(NSIndexPath *indexPath, BOOL isLastCell, CGRect b, Pa
         {
             // Keep stuck at top
             f.origin.y      = b.origin.y * e.inheritance/2.0;
-            f.size.height   = m.collapsed.size.height - b.origin.y * (1 + e.inheritance);
+            f.size.height   = m.collapsed.size.height - b.origin.y * (1 + 16.0);
         }
         else
         {
             // Displace in stepping amounts factored by resitatnce
             f.origin.y     -= b.origin.y * indexPath.item * e.inheritance;
-            f.size.height  -= b.origin.y * e.inheritance;
+            f.size.height  -= b.origin.y * 16.0;
         }
     }
     else if (b.origin.y > 0)

@@ -26,9 +26,11 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         navigationController?.delegate = self
         
+        self.nextButton.alpha = 1 // development
+
         animator = UIDynamicAnimator(referenceView: dynamicView)
         
         nextButton.alpha = 0

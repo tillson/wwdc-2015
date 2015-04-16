@@ -21,6 +21,10 @@
 		C51140811ADE0C4100D76B7E /* PassCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = C51140801ADE0C4100D76B7E /* PassCard.xib */; };
 		C51140841ADE180900D76B7E /* CabinetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51140831ADE180900D76B7E /* CabinetViewController.swift */; };
 		C51140861ADE184800D76B7E /* PassCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51140851ADE184800D76B7E /* PassCard.swift */; };
+		C59034951ADEF16E00EA0A59 /* font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C59034941ADEF16E00EA0A59 /* font.ttf */; };
+		C59034971ADEFA5D00EA0A59 /* CardContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59034961ADEFA5D00EA0A59 /* CardContentViewController.swift */; };
+		C5EE0DF31ADF2BE3005A0EAE /* PushNoAnimationSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5EE0DF21ADF2BE3005A0EAE /* PushNoAnimationSegue.swift */; };
+		C5EE0DF61ADF30EE005A0EAE /* pastwork.html in Resources */ = {isa = PBXBuildFile; fileRef = C5EE0DF51ADF30EE005A0EAE /* pastwork.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +58,10 @@
 		C51140801ADE0C4100D76B7E /* PassCard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PassCard.xib; sourceTree = "<group>"; };
 		C51140831ADE180900D76B7E /* CabinetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CabinetViewController.swift; sourceTree = "<group>"; };
 		C51140851ADE184800D76B7E /* PassCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassCard.swift; sourceTree = "<group>"; };
+		C59034941ADEF16E00EA0A59 /* font.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = font.ttf; sourceTree = "<group>"; };
+		C59034961ADEFA5D00EA0A59 /* CardContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardContentViewController.swift; sourceTree = "<group>"; };
+		C5EE0DF21ADF2BE3005A0EAE /* PushNoAnimationSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushNoAnimationSegue.swift; sourceTree = "<group>"; };
+		C5EE0DF51ADF30EE005A0EAE /* pastwork.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = pastwork.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +146,7 @@
 				C511406E1ADDC74E00D76B7E /* CircleScene.swift */,
 				C511406A1ADDC73200D76B7E /* ViewController.swift */,
 				C51140831ADE180900D76B7E /* CabinetViewController.swift */,
+				C59034961ADEFA5D00EA0A59 /* CardContentViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -148,6 +157,7 @@
 				C511407A1ADDFFA100D76B7E /* APIs */,
 				C51140711ADDC7A300D76B7E /* Utilities.swift */,
 				C51140701ADDC7A300D76B7E /* OpeningTransitionManager.swift */,
+				C5EE0DF21ADF2BE3005A0EAE /* PushNoAnimationSegue.swift */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -191,9 +201,19 @@
 		C51140821ADE156600D76B7E /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				C5EE0DF41ADF30DC005A0EAE /* Card Content */,
+				C59034941ADEF16E00EA0A59 /* font.ttf */,
 				C51140511ADDC6AD00D76B7E /* Images.xcassets */,
 			);
 			name = Assets;
+			sourceTree = "<group>";
+		};
+		C5EE0DF41ADF30DC005A0EAE /* Card Content */ = {
+			isa = PBXGroup;
+			children = (
+				C5EE0DF51ADF30EE005A0EAE /* pastwork.html */,
+			);
+			name = "Card Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,8 +296,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C59034951ADEF16E00EA0A59 /* font.ttf in Resources */,
 				C511406D1ADDC74500D76B7E /* Main.storyboard in Resources */,
 				C51140551ADDC6AD00D76B7E /* LaunchScreen.xib in Resources */,
+				C5EE0DF61ADF30EE005A0EAE /* pastwork.html in Resources */,
 				C51140811ADE0C4100D76B7E /* PassCard.xib in Resources */,
 				C51140521ADDC6AD00D76B7E /* Images.xcassets in Resources */,
 			);
@@ -297,10 +319,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C59034971ADEFA5D00EA0A59 /* CardContentViewController.swift in Sources */,
 				C51140791ADDFEC000D76B7E /* CardObject.swift in Sources */,
 				C511407F1ADDFFB300D76B7E /* PassbookLayout.m in Sources */,
 				C51140721ADDC7A300D76B7E /* OpeningTransitionManager.swift in Sources */,
 				C51140841ADE180900D76B7E /* CabinetViewController.swift in Sources */,
+				C5EE0DF31ADF2BE3005A0EAE /* PushNoAnimationSegue.swift in Sources */,
 				C51140861ADE184800D76B7E /* PassCard.swift in Sources */,
 				C511406B1ADDC73200D76B7E /* ViewController.swift in Sources */,
 				C511404B1ADDC6AD00D76B7E /* AppDelegate.swift in Sources */,
@@ -500,6 +524,7 @@
 				C51140661ADDC6AD00D76B7E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C51140671ADDC6AD00D76B7E /* Build configuration list for PBXNativeTarget "Tillson GallowayTests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +533,7 @@
 				C51140691ADDC6AD00D76B7E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
