@@ -12,12 +12,13 @@ class CardObject {
 
     let title: String
     let body: String
-    
+    let imageName: String
     var customView: UIView?
 
-    init(title: String, body: String) {
+    init(title: String, body: String, imageName: String) {
         self.title = title
         self.body = body
+        self.imageName = imageName
     }
     
     

@@ -26,6 +26,9 @@ class PassCard: UICollectionViewCell {
 //    }
     
     override func awakeFromNib() {
+        
+        
+        
         cardBackground.layer.shadowColor = UIColor.blackColor().CGColor
         cardBackground.layer.shadowOffset = CGSize(width: 0, height: -1)
         cardBackground.layer.shadowOpacity = 0.6

@@ -17,20 +17,21 @@ class CabinetViewController: UICollectionViewController {
         super.viewDidLoad()
         navigationController?.delegate = nil
         
-        cards.append(CardObject(title: "About Me", body: "I am the one who knocks."))
-        cards.append(CardObject(title: "Education", body: "Hey, that's a Modest Mouse song!"))
+        cards.append(CardObject(title: "About Me", body: "I am the one who knocks.", imageName: "card-red"))
+        cards.append(CardObject(title: "Education", body: "Hey, that's a Modest Mouse song!", imageName: "card-red"))
         
-        let obj = CardObject(title: "Past Work", body: "")
+        let obj = CardObject(title: "Past Work", body: "", imageName: "card-orange")
         let webView = WKWebView(frame: CGRect(x: 50, y: 125, width: view.frame.width - 100, height: 250))
+        webView.multipleTouchEnabled = false
         let path = NSBundle.mainBundle().pathForResource("pastwork", ofType: "html")!
         webView.loadRequest(NSURLRequest(URL: NSURL(fileURLWithPath: path, isDirectory: false)!))
         obj.customView = webView
         cards.append(obj)
         
-        cards.append(CardObject(title: "Timeline", body: "A game"))
+        cards.append(CardObject(title: "Timeline", body: "A game", imageName: "card-red"))
         collectionView?.registerNib(UINib(nibName: "PassCard", bundle: NSBundle.mainBundle()), forCellWithReuseIdentifier: "pass")
     }
-    
+
     
     // MARK: Collection View Stuff
     
@@ -46,6 +47,7 @@ class CabinetViewController: UICollectionViewController {
         let card: PassCard = collectionView.dequeueReusableCellWithReuseIdentifier("pass", forIndexPath: indexPath) as! PassCard
         card.cardTitle.text = cards[indexPath.row].title
         card.cardBody.text = cards[indexPath.row].body
+        card.cardBackground.image = UIImage(named: cards[indexPath.row].imageName)
         if let customView = cards[indexPath.row].customView {
             card.customView = customView
         }
@@ -86,8 +88,11 @@ class CabinetViewController: UICollectionViewController {
                 customView.frame.origin = point
                 UIView.animateWithDuration(0.5, animations: {
                     customView.frame = self.view.frame
-                    }, completion: { finished in
-//                        self.performSegueWithIdentifier("showCard", sender: self)
+                    }, completion: { completed in
+                        if let webView = customView as? WKWebView {
+                            webView.scrollView.setContentOffset(CGPoint(x: 0, y: 0), animated: true)
+                            webView.scrollView.multipleTouchEnabled = false
+                        }
                 })
             }
         }

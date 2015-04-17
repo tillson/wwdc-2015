@@ -24,6 +24,8 @@ class ViewController: UIViewController {
     var animator: UIDynamicAnimator!
     let transitionManager = OpeningTransitionManager()
     
+    let DEV = true
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -33,7 +35,9 @@ class ViewController: UIViewController {
 
         animator = UIDynamicAnimator(referenceView: dynamicView)
         
-        nextButton.alpha = 0
+        if !DEV {
+            nextButton.alpha = 0
+        }
         hiLabel.frame.origin.y = view.frame.width - 40
         hiLabel.alpha = 0
         UIView.animateWithDuration(1.0, delay: 0.0, usingSpringWithDamping: 0.9, initialSpringVelocity: 0.1, options: UIViewAnimationOptions.CurveEaseInOut, animations: {
