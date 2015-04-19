@@ -16,7 +16,7 @@
                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XvU-0g-Rac" userLabel="Container">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="420"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pass-mockup-red" translatesAutoresizingMaskIntoConstraints="NO" id="GHs-rZ-e3m">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="card-red" translatesAutoresizingMaskIntoConstraints="NO" id="GHs-rZ-e3m">
                                 <rect key="frame" x="0.0" y="8" width="375" height="412"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fGw-sq-cdg">
@@ -32,6 +32,17 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KWQ-Hw-3ko">
+                                <rect key="frame" x="131" y="204" width="112" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <state key="normal" title="See more">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="mHG-LX-szQ" eventType="touchUpInside" id="N7d-D0-SP0"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
@@ -44,11 +55,12 @@
                 <outlet property="cardBackground" destination="GHs-rZ-e3m" id="8sw-NP-JEg"/>
                 <outlet property="cardBody" destination="fGw-sq-cdg" id="nXZ-1E-wOA"/>
                 <outlet property="cardTitle" destination="GgI-EW-Ety" id="cDi-KA-0Jg"/>
+                <outlet property="seeMoreButton" destination="KWQ-Hw-3ko" id="F1D-SA-pwQ"/>
             </connections>
             <point key="canvasLocation" x="449.5" y="452"/>
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="pass-mockup-red" width="320" height="420"/>
+        <image name="card-red" width="320" height="420"/>
     </resources>
 </document>

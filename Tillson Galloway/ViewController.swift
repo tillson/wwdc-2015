@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import SpriteKit
 
 class ViewController: UIViewController {
 
@@ -24,11 +23,14 @@ class ViewController: UIViewController {
     var animator: UIDynamicAnimator!
     let transitionManager = OpeningTransitionManager()
     
+    let emitter = CAEmitterCell()
+    let emitterLayer = CAEmitterLayer()
+    
     let DEV = true
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         navigationController?.delegate = self
         
         self.nextButton.alpha = 1 // development
@@ -46,14 +48,48 @@ class ViewController: UIViewController {
             }, completion: { completed in
                 self.animateImage()
         })
-
-        let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(3 * Double(NSEC_PER_SEC)))
+        
+        
+        let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(3.0 * Double(NSEC_PER_SEC)))
         dispatch_after(delayTime, dispatch_get_main_queue()) {
-            let spriteView = SKView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height / 2 + 80))
-            spriteView.presentScene(CircleScene(size: spriteView.frame.size))
-            self.view.insertSubview(spriteView, atIndex: 0)
-            self.nextButton.alpha = 1
+            self.animateBubbles()
         }
+    }
+    
+    func animateBubbles() {
+        emitterLayer.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height / 2 + 80)
+        emitterLayer.emitterPosition = CGPoint(x: self.view.frame.width / 2, y: self.view.frame.height / 2 - 20)
+        emitterLayer.emitterSize = CGSize(width: 100, height: 47)
+        
+        emitter.birthRate = 5
+        
+        emitter.lifetime = 2.5
+        
+        emitter.alphaRange = 0.2
+        emitter.alphaSpeed = -0.7
+        
+        emitter.scale = 0.2
+        emitter.scaleSpeed = 0.45
+        emitter.yAcceleration = -100
+        emitter.velocity = 10
+        emitter.velocityRange = 150
+        emitter.emissionRange = CGFloat(M_PI_2)
+        emitter.name = "cell"
+        emitter.color = UIColor.blueColor().CGColor //UIColor(hue: CGFloat(drand48()), saturation: 1.0, brightness: 1.0, alpha: 0.5).CGColor
+        emitter.contents = UIImage(named: "circle")!.CGImage
+        
+        emitter.redRange = 5.0
+        emitter.blueRange = 1.0
+        emitter.greenRange = 1.0
+
+        emitterLayer.emitterCells = [self.emitter]
+        
+        self.view.layer.insertSublayer(emitterLayer, atIndex: 0)
+    }
+    
+    override func viewDidDisappear(animated: Bool) {
+        emitterLayer.removeAllAnimations()
+        emitterLayer.removeFromSuperlayer()
     }
     
     func animateImage() {

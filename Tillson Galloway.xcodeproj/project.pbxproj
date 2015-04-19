@@ -13,7 +13,6 @@
 		C51140611ADDC6AD00D76B7E /* Tillson_GallowayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51140601ADDC6AD00D76B7E /* Tillson_GallowayTests.swift */; };
 		C511406B1ADDC73200D76B7E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C511406A1ADDC73200D76B7E /* ViewController.swift */; };
 		C511406D1ADDC74500D76B7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C511406C1ADDC74500D76B7E /* Main.storyboard */; };
-		C511406F1ADDC74E00D76B7E /* CircleScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C511406E1ADDC74E00D76B7E /* CircleScene.swift */; };
 		C51140721ADDC7A300D76B7E /* OpeningTransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51140701ADDC7A300D76B7E /* OpeningTransitionManager.swift */; };
 		C51140731ADDC7A300D76B7E /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51140711ADDC7A300D76B7E /* Utilities.swift */; };
 		C51140791ADDFEC000D76B7E /* CardObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51140781ADDFEC000D76B7E /* CardObject.swift */; };
@@ -21,9 +20,10 @@
 		C51140811ADE0C4100D76B7E /* PassCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = C51140801ADE0C4100D76B7E /* PassCard.xib */; };
 		C51140841ADE180900D76B7E /* CabinetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51140831ADE180900D76B7E /* CabinetViewController.swift */; };
 		C51140861ADE184800D76B7E /* PassCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51140851ADE184800D76B7E /* PassCard.swift */; };
+		C57173751AE1BAD5003BC1CE /* PastWorkScroll.xib in Resources */ = {isa = PBXBuildFile; fileRef = C57173741AE1BAD5003BC1CE /* PastWorkScroll.xib */; };
+		C57173771AE1C582003BC1CE /* PastWorkScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57173761AE1C582003BC1CE /* PastWorkScroll.swift */; };
+		C571737B1AE1EC26003BC1CE /* CabinetDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C571737A1AE1EC25003BC1CE /* CabinetDelegate.swift */; };
 		C59034951ADEF16E00EA0A59 /* font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C59034941ADEF16E00EA0A59 /* font.ttf */; };
-		C5EE0DF31ADF2BE3005A0EAE /* PushNoAnimationSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5EE0DF21ADF2BE3005A0EAE /* PushNoAnimationSegue.swift */; };
-		C5EE0DF61ADF30EE005A0EAE /* pastwork.html in Resources */ = {isa = PBXBuildFile; fileRef = C5EE0DF51ADF30EE005A0EAE /* pastwork.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +47,6 @@
 		C51140601ADDC6AD00D76B7E /* Tillson_GallowayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tillson_GallowayTests.swift; sourceTree = "<group>"; };
 		C511406A1ADDC73200D76B7E /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C511406C1ADDC74500D76B7E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		C511406E1ADDC74E00D76B7E /* CircleScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleScene.swift; sourceTree = "<group>"; };
 		C51140701ADDC7A300D76B7E /* OpeningTransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpeningTransitionManager.swift; sourceTree = "<group>"; };
 		C51140711ADDC7A300D76B7E /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		C51140781ADDFEC000D76B7E /* CardObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardObject.swift; sourceTree = "<group>"; };
@@ -57,9 +56,10 @@
 		C51140801ADE0C4100D76B7E /* PassCard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PassCard.xib; sourceTree = "<group>"; };
 		C51140831ADE180900D76B7E /* CabinetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CabinetViewController.swift; sourceTree = "<group>"; };
 		C51140851ADE184800D76B7E /* PassCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassCard.swift; sourceTree = "<group>"; };
+		C57173741AE1BAD5003BC1CE /* PastWorkScroll.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PastWorkScroll.xib; sourceTree = "<group>"; };
+		C57173761AE1C582003BC1CE /* PastWorkScroll.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PastWorkScroll.swift; sourceTree = "<group>"; };
+		C571737A1AE1EC25003BC1CE /* CabinetDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CabinetDelegate.swift; sourceTree = "<group>"; };
 		C59034941ADEF16E00EA0A59 /* font.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = font.ttf; sourceTree = "<group>"; };
-		C5EE0DF21ADF2BE3005A0EAE /* PushNoAnimationSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushNoAnimationSegue.swift; sourceTree = "<group>"; };
-		C5EE0DF51ADF30EE005A0EAE /* pastwork.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = pastwork.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,7 +141,6 @@
 		C51140741ADDC7E300D76B7E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				C511406E1ADDC74E00D76B7E /* CircleScene.swift */,
 				C511406A1ADDC73200D76B7E /* ViewController.swift */,
 				C51140831ADE180900D76B7E /* CabinetViewController.swift */,
 			);
@@ -154,7 +153,6 @@
 				C511407A1ADDFFA100D76B7E /* APIs */,
 				C51140711ADDC7A300D76B7E /* Utilities.swift */,
 				C51140701ADDC7A300D76B7E /* OpeningTransitionManager.swift */,
-				C5EE0DF21ADF2BE3005A0EAE /* PushNoAnimationSegue.swift */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -165,7 +163,9 @@
 				C511406C1ADDC74500D76B7E /* Main.storyboard */,
 				C51140801ADE0C4100D76B7E /* PassCard.xib */,
 				C51140531ADDC6AD00D76B7E /* LaunchScreen.xib */,
+				C57173741AE1BAD5003BC1CE /* PastWorkScroll.xib */,
 				C51140851ADE184800D76B7E /* PassCard.swift */,
+				C57173761AE1C582003BC1CE /* PastWorkScroll.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -174,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				C51140781ADDFEC000D76B7E /* CardObject.swift */,
+				C571737A1AE1EC25003BC1CE /* CabinetDelegate.swift */,
 			);
 			name = Modal;
 			sourceTree = "<group>";
@@ -198,19 +199,10 @@
 		C51140821ADE156600D76B7E /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				C5EE0DF41ADF30DC005A0EAE /* Card Content */,
 				C59034941ADEF16E00EA0A59 /* font.ttf */,
 				C51140511ADDC6AD00D76B7E /* Images.xcassets */,
 			);
 			name = Assets;
-			sourceTree = "<group>";
-		};
-		C5EE0DF41ADF30DC005A0EAE /* Card Content */ = {
-			isa = PBXGroup;
-			children = (
-				C5EE0DF51ADF30EE005A0EAE /* pastwork.html */,
-			);
-			name = "Card Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,7 +288,7 @@
 				C59034951ADEF16E00EA0A59 /* font.ttf in Resources */,
 				C511406D1ADDC74500D76B7E /* Main.storyboard in Resources */,
 				C51140551ADDC6AD00D76B7E /* LaunchScreen.xib in Resources */,
-				C5EE0DF61ADF30EE005A0EAE /* pastwork.html in Resources */,
+				C57173751AE1BAD5003BC1CE /* PastWorkScroll.xib in Resources */,
 				C51140811ADE0C4100D76B7E /* PassCard.xib in Resources */,
 				C51140521ADDC6AD00D76B7E /* Images.xcassets in Resources */,
 			);
@@ -318,14 +310,14 @@
 			files = (
 				C51140791ADDFEC000D76B7E /* CardObject.swift in Sources */,
 				C511407F1ADDFFB300D76B7E /* PassbookLayout.m in Sources */,
+				C57173771AE1C582003BC1CE /* PastWorkScroll.swift in Sources */,
 				C51140721ADDC7A300D76B7E /* OpeningTransitionManager.swift in Sources */,
+				C571737B1AE1EC26003BC1CE /* CabinetDelegate.swift in Sources */,
 				C51140841ADE180900D76B7E /* CabinetViewController.swift in Sources */,
-				C5EE0DF31ADF2BE3005A0EAE /* PushNoAnimationSegue.swift in Sources */,
 				C51140861ADE184800D76B7E /* PassCard.swift in Sources */,
 				C511406B1ADDC73200D76B7E /* ViewController.swift in Sources */,
 				C511404B1ADDC6AD00D76B7E /* AppDelegate.swift in Sources */,
 				C51140731ADDC7A300D76B7E /* Utilities.swift in Sources */,
-				C511406F1ADDC74E00D76B7E /* CircleScene.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

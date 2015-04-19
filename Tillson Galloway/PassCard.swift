@@ -2,7 +2,7 @@
 //  PassCard.swift
 //  FileCabinet
 //
-//  Created by Tillson on 3/31/15.
+//  Created by Tillson on 4/15/15.
 //  Copyright (c) 2015 Tillson Galloway. All rights reserved.
 //
 
@@ -13,10 +13,13 @@ class PassCard: UICollectionViewCell {
     @IBOutlet var cardTitle: UILabel!
     @IBOutlet var cardBody: UITextView!
     @IBOutlet var cardBackground: UIImageView!
+    
+    @IBOutlet var seeMoreButton: UIButton!
+    
     var customView: UIView?
         {
         didSet {
-            self.addSubview(customView!)
+            self.seeMoreButton.alpha = 1.0
         }
     }
     
@@ -26,8 +29,7 @@ class PassCard: UICollectionViewCell {
 //    }
     
     override func awakeFromNib() {
-        
-        
+        seeMoreButton.alpha = 0.0
         
         cardBackground.layer.shadowColor = UIColor.blackColor().CGColor
         cardBackground.layer.shadowOffset = CGSize(width: 0, height: -1)
@@ -36,4 +38,14 @@ class PassCard: UICollectionViewCell {
         cardBackground.clipsToBounds = false
     }
     
+    @IBAction func buttonPressed(sender: AnyObject) {
+        if let cView = customView {
+            cView.alpha = 1.0
+            superview?.addSubview(cView)
+            cView.frame = CGRect(x: 0, y: 0, width: 0.0, height: 0.0)
+            UIView.animateWithDuration(0.5, animations: {
+                cView.frame.size = self.superview!.frame.size
+            })
+        }
+    }
 }

@@ -55,6 +55,7 @@ class OpeningTransitionManager: NSObject, UIViewControllerAnimatedTransitioning 
                 topImageView.removeFromSuperview()
                 bottomImageView.removeFromSuperview()
                 imageBall.removeFromSuperview()
+                fromView.removeFromSuperview()
         })
         
     }

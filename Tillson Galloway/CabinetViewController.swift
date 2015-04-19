@@ -16,16 +16,20 @@ class CabinetViewController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.delegate = nil
-        
+
         cards.append(CardObject(title: "About Me", body: "I am the one who knocks.", imageName: "card-red"))
         cards.append(CardObject(title: "Education", body: "Hey, that's a Modest Mouse song!", imageName: "card-red"))
         
-        let obj = CardObject(title: "Past Work", body: "", imageName: "card-orange")
-        let webView = WKWebView(frame: CGRect(x: 50, y: 125, width: view.frame.width - 100, height: 250))
-        webView.multipleTouchEnabled = false
-        let path = NSBundle.mainBundle().pathForResource("pastwork", ofType: "html")!
-        webView.loadRequest(NSURLRequest(URL: NSURL(fileURLWithPath: path, isDirectory: false)!))
-        obj.customView = webView
+        let obj = CardObject(title: "Past Work", body: "In the past, I've worked on a vareity of apps, including: iSignedIn, Timed Test, and a vareity of open source projects at my school.", imageName: "card-orange")
+        let scrollView = UIScrollView(frame: CGRect(x: 50, y: 125, width: view.frame.width - 100, height: 250))
+        let array = NSBundle.mainBundle().loadNibNamed("PastWorkScroll", owner: self, options: nil)
+        let pastWorkView = array[0] as! PastWorkScroll
+        pastWorkView.scrollView = scrollView
+        scrollView.addSubview(pastWorkView)
+        scrollView.backgroundColor = UIColor.whiteColor()
+        scrollView.contentSize = pastWorkView.frame.size
+        obj.customView = scrollView
+        
         cards.append(obj)
         
         cards.append(CardObject(title: "Timeline", body: "A game", imageName: "card-red"))
@@ -75,27 +79,6 @@ class CabinetViewController: UICollectionViewController {
     override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         collectionView.performBatchUpdates(nil, completion: nil)
         collectionView.scrollEnabled = false
-        
-        let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(0.5 * Double(NSEC_PER_SEC)))
-        dispatch_after(delayTime, dispatch_get_main_queue()) {
-            let card = collectionView.cellForItemAtIndexPath(indexPath) as! PassCard
-            card.clipsToBounds = false
-            card.autoresizesSubviews = false
-            if let customView = card.customView {
-                let point = card.convertPoint(customView.frame.origin, toView: self.view)
-                customView.removeFromSuperview()
-                self.view.addSubview(customView)
-                customView.frame.origin = point
-                UIView.animateWithDuration(0.5, animations: {
-                    customView.frame = self.view.frame
-                    }, completion: { completed in
-                        if let webView = customView as? WKWebView {
-                            webView.scrollView.setContentOffset(CGPoint(x: 0, y: 0), animated: true)
-                            webView.scrollView.multipleTouchEnabled = false
-                        }
-                })
-            }
-        }
     }
     
 }
