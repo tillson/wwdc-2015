@@ -23,7 +23,7 @@ class PassCard: UICollectionViewCell {
         }
     }
     
-    // Eventually will have gradient support
+    // Eventually will have gradient support(?)
 //    func setBackgroundColor(color: UIColor) {
 //        backgroundColor = color
 //    }
@@ -43,6 +43,11 @@ class PassCard: UICollectionViewCell {
             cView.alpha = 1.0
             superview?.addSubview(cView)
             cView.frame = CGRect(x: 0, y: 0, width: 0.0, height: 0.0)
+            
+            if let scrollView = cView as? UIScrollView, pastWorkView = scrollView.subviews[0] as? PastWorkScroll {
+                pastWorkView.startSignedInAnimation()
+            }
+            
             UIView.animateWithDuration(0.5, animations: {
                 cView.frame.size = self.superview!.frame.size
             })

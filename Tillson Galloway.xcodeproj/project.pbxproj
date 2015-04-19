@@ -22,7 +22,6 @@
 		C51140861ADE184800D76B7E /* PassCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51140851ADE184800D76B7E /* PassCard.swift */; };
 		C57173751AE1BAD5003BC1CE /* PastWorkScroll.xib in Resources */ = {isa = PBXBuildFile; fileRef = C57173741AE1BAD5003BC1CE /* PastWorkScroll.xib */; };
 		C57173771AE1C582003BC1CE /* PastWorkScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57173761AE1C582003BC1CE /* PastWorkScroll.swift */; };
-		C571737B1AE1EC26003BC1CE /* CabinetDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C571737A1AE1EC25003BC1CE /* CabinetDelegate.swift */; };
 		C59034951ADEF16E00EA0A59 /* font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C59034941ADEF16E00EA0A59 /* font.ttf */; };
 /* End PBXBuildFile section */
 
@@ -58,7 +57,6 @@
 		C51140851ADE184800D76B7E /* PassCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassCard.swift; sourceTree = "<group>"; };
 		C57173741AE1BAD5003BC1CE /* PastWorkScroll.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PastWorkScroll.xib; sourceTree = "<group>"; };
 		C57173761AE1C582003BC1CE /* PastWorkScroll.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PastWorkScroll.swift; sourceTree = "<group>"; };
-		C571737A1AE1EC25003BC1CE /* CabinetDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CabinetDelegate.swift; sourceTree = "<group>"; };
 		C59034941ADEF16E00EA0A59 /* font.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = font.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -174,7 +172,6 @@
 			isa = PBXGroup;
 			children = (
 				C51140781ADDFEC000D76B7E /* CardObject.swift */,
-				C571737A1AE1EC25003BC1CE /* CabinetDelegate.swift */,
 			);
 			name = Modal;
 			sourceTree = "<group>";
@@ -312,7 +309,6 @@
 				C511407F1ADDFFB300D76B7E /* PassbookLayout.m in Sources */,
 				C57173771AE1C582003BC1CE /* PastWorkScroll.swift in Sources */,
 				C51140721ADDC7A300D76B7E /* OpeningTransitionManager.swift in Sources */,
-				C571737B1AE1EC26003BC1CE /* CabinetDelegate.swift in Sources */,
 				C51140841ADE180900D76B7E /* CabinetViewController.swift in Sources */,
 				C51140861ADE184800D76B7E /* PassCard.swift in Sources */,
 				C511406B1ADDC73200D76B7E /* ViewController.swift in Sources */,

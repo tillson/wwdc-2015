@@ -62,12 +62,9 @@ class ViewController: UIViewController {
         emitterLayer.emitterSize = CGSize(width: 100, height: 47)
         
         emitter.birthRate = 5
-        
         emitter.lifetime = 2.5
-        
         emitter.alphaRange = 0.2
         emitter.alphaSpeed = -0.7
-        
         emitter.scale = 0.2
         emitter.scaleSpeed = 0.45
         emitter.yAcceleration = -100

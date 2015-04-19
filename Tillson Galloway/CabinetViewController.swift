@@ -16,7 +16,8 @@ class CabinetViewController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.delegate = nil
-
+        
+        cards.append(CardObject(title: "", body: "", imageName: ""))
         cards.append(CardObject(title: "About Me", body: "I am the one who knocks.", imageName: "card-red"))
         cards.append(CardObject(title: "Education", body: "Hey, that's a Modest Mouse song!", imageName: "card-red"))
         

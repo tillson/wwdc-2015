@@ -135,19 +135,19 @@
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="inu-Uk-Mig">
                     <rect key="frame" x="0.0" y="1030" width="375" height="178"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="iphone5-vertical" translatesAutoresizingMaskIntoConstraints="NO" id="NMW-47-foO">
+                        <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="iphone5-vertical" translatesAutoresizingMaskIntoConstraints="NO" id="NMW-47-foO">
                             <rect key="frame" x="8" y="40" width="79" height="130"/>
                         </imageView>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="imac-27" translatesAutoresizingMaskIntoConstraints="NO" id="qHg-lc-1JC">
+                        <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="imac-27" translatesAutoresizingMaskIntoConstraints="NO" id="qHg-lc-1JC">
                             <rect key="frame" x="226" y="51" width="141" height="119"/>
                         </imageView>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="database" translatesAutoresizingMaskIntoConstraints="NO" id="Ewb-8v-7xp">
+                        <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="database" translatesAutoresizingMaskIntoConstraints="NO" id="Ewb-8v-7xp">
                             <rect key="frame" x="125" y="104" width="57" height="66"/>
                         </imageView>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(this is a developer conference, you know" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jTR-4L-Y2Q">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(this is a developer conference, you know)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jTR-4L-Y2Q">
                     <rect key="frame" x="83" y="1001" width="208" height="21"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
                     <color key="textColor" white="0.32059518914473684" alpha="1" colorSpace="calibratedWhite"/>

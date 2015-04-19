@@ -48,7 +48,7 @@
     
     m.normal.size       = CGSizeMake(375.0, 420.0);
     m.normal.overlap    = 0.0;
-    m.collapsed.size    = CGSizeMake(375.0, 96.0);
+    m.collapsed.size    = CGSizeMake(375.0, 120.0);
     m.collapsed.overlap = 16.0;
     
     m.bottomStackedHeight = 8.0;
@@ -84,7 +84,7 @@
     
     if (indexPath.item == 0) {
         UIWindow *window = ([UIApplication sharedApplication].delegate).window;
-        attributes.frame = CGRectMake(0, 0, window.frame.size.width, 55);
+        attributes.frame = CGRectMake(0, 0, window.frame.size.width, 70);
         return attributes;
     }
     
@@ -119,7 +119,7 @@
     
     NSMutableArray *cells = [NSMutableArray arrayWithCapacity:range.length];
     
-    for (NSUInteger index=0,item=range.location; item < (range.location + range.length); item++, index++)
+    for (NSUInteger index = 0, item=range.location; item < (range.location + range.length); item++, index++)
     {
         cells[index] = [self layoutAttributesForItemAtIndexPath:[NSIndexPath indexPathForItem:item inSection:0]];
     }
@@ -173,6 +173,7 @@ CGRect frameForPassAtIndex(NSIndexPath *indexPath, BOOL isLastCell, CGRect b, Pa
     
     // The default size is the normal size
     f.size = m.collapsed.size;
+    f.size.height = 145.0;
     
     if (b.origin.y < 0 && e.inheritance > 0.0 && e.bouncesTop)
     {
