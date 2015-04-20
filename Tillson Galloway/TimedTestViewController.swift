@@ -16,7 +16,7 @@ class TimedTestViewController: UIViewController {
     
     var currentProblemView = UIView()
     var currentProblem: AdditionProblem?
-    var answerLabel: UITextField?
+    var answerField: UITextField?
     var correct = 0
     var completedProblems = 0
     var totalTime = 0
@@ -31,8 +31,6 @@ class TimedTestViewController: UIViewController {
         view.backgroundColor = UIColor.darkGrayColor()
         
         showNextProblem(currentProblemView, forProblem: getNewProblem())
-        
-
     }
     
     func showNextProblem(loadView: UIView, forProblem: AdditionProblem) {
@@ -80,14 +78,14 @@ class TimedTestViewController: UIViewController {
         
         let toolbar = UIToolbar(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: 35))
         let text = completedProblems == 2 ? "Done" : "Next"
-        let barButtonItem = UIBarButtonItem(title: "Next", style: UIBarButtonItemStyle.Plain, target: self, action: "nextButtonPressed:")
+        let barButtonItem = UIBarButtonItem(title: text, style: UIBarButtonItemStyle.Plain, target: self, action: "nextButtonPressed:")
         barButtonItem.width = view.frame.width / 3.55
         toolbar.setItems([barButtonItem], animated: true)
         textField.inputAccessoryView = toolbar
         
         loadView.addSubview(textField)
         textField.becomeFirstResponder()
-        answerLabel = textField
+        answerField = textField
         
         view.addSubview(loadView)
         if currentProblem != nil {
@@ -109,15 +107,67 @@ class TimedTestViewController: UIViewController {
         })
     }
     
+    func finish() {
+        answerField?.resignFirstResponder()
+        
+        let finishView = UIView()
+        finishView.frame = CGRect(x: view.frame.width+5, y: 15, width: view.frame.width-30, height: view.frame.height-30)
+        finishView.backgroundColor = UIColor.whiteColor()
+        finishView.layer.cornerRadius = 10
+        
+        let doneLabel = UILabel()
+        doneLabel.frame = CGRect(x: finishView.frame.width / 2 - 150, y: 115, width: 300, height: 175)
+        doneLabel.text = "You did it!"
+        doneLabel.font = UIFont(name: "HelveticaNeue-Thin", size: 150)
+        doneLabel.adjustsFontSizeToFitWidth = true
+        doneLabel.textAlignment = .Center
+        finishView.addSubview(doneLabel)
+        
+        let infoLabel = UILabel()
+        infoLabel.frame = CGRect(x: finishView.frame.width / 2 - 150, y: 175, width: 300, height: 175)
+        infoLabel.text = "Pretty simple, right?"
+        infoLabel.textColor = UIColor.darkGrayColor()
+        infoLabel.font = UIFont(name: "HelveticaNeue-Thin", size: 100)
+        infoLabel.adjustsFontSizeToFitWidth = true
+        infoLabel.textAlignment = .Center
+        infoLabel.alpha = 0.0
+        finishView.addSubview(infoLabel)
+        
+        let button = UIButton()
+        button.frame = CGRect(x: finishView.frame.width / 2 - 150, y: 325, width: 300, height: 50)
+        button.setTitle("Done", forState: .Normal)
+        button.setTitleColor(UIColor.blueColor(), forState: .Normal)
+        button.addTarget(self, action: "closeWindow", forControlEvents: .TouchUpInside)
+        button.alpha = 0.0
+        finishView.addSubview(button)
+        
+        UIView.animateWithDuration(0.3, delay: 1.0, options: nil, animations: {
+            infoLabel.alpha = 1.0
+        }, completion: nil)
+        
+        UIView.animateWithDuration(0.4, delay: 1.0, options: nil, animations: {
+            button.alpha = 1.0
+        }, completion: nil)
+        
+
+        view.addSubview(finishView)
+        animateNewProblem(finishView)
+    }
+    
+    func closeWindow() {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
     @IBAction func nextButtonPressed(sender: AnyObject) {
         if isTransitioning {
             return
         }
-        let answerIsCorrect = currentProblem!.answerIsCorrect((answerLabel?.text)!)
+        let answerIsCorrect = currentProblem!.answerIsCorrect((answerField?.text)!)
         if answerIsCorrect {
             correct++
         }
         completedProblems++
+        isTransitioning = true
         UIView.animateKeyframesWithDuration(1.0, delay: 0.0, options: UIViewKeyframeAnimationOptions.CalculationModeCubic, animations: {
             UIView.addKeyframeWithRelativeStartTime(0.0, relativeDuration: 0.7, animations: {
                 self.view.backgroundColor = (answerIsCorrect ? UIColor.greenColor() : UIColor.redColor())
@@ -126,7 +176,11 @@ class TimedTestViewController: UIViewController {
                 self.view.backgroundColor = UIColor.grayColor()
             })
             }, completion: { animated in
-                self.showNextProblem(UIView(), forProblem: self.getNewProblem())
+                if self.completedProblems >= 3 {
+                    self.finish()
+                } else {
+                    self.showNextProblem(UIView(), forProblem: self.getNewProblem())
+                }
         })
     }
     

@@ -11,13 +11,19 @@ import UIKit
 class PastWorkScroll: UIView {
    
     @IBOutlet var timedTestImage: UIImageView!
-    @IBOutlet var signedInView: UIView!
+    @IBOutlet var signedInTechImageView: AnimatableImageView!
     
     var delegate: PastWorkDelegate?
     
     override func awakeFromNib() {
         timedTestImage.layer.cornerRadius = 10.0
         timedTestImage.clipsToBounds = true
+        
+        let priority = DISPATCH_QUEUE_PRIORITY_DEFAULT
+        dispatch_async(dispatch_get_global_queue(priority, 0)) {
+            self.signedInTechImageView.animateWithImage(named: "signedintech.gif")
+        }
+        
     }
 
     @IBAction func signedInButton(sender: AnyObject) {
