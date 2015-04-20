@@ -22,18 +22,12 @@ class CabinetViewController: UICollectionViewController {
         cards.append(CardObject(title: "Education", body: "Hey, that's a Modest Mouse song!", imageName: "card-red"))
         
         let obj = CardObject(title: "Past Work", body: "In the past, I've worked on a vareity of apps, including: iSignedIn, Timed Test, and a vareity of open source projects at my school.", imageName: "card-orange")
-        let scrollView = UIScrollView(frame: CGRect(x: 50, y: 125, width: view.frame.width - 100, height: 250))
-        let array = NSBundle.mainBundle().loadNibNamed("PastWorkScroll", owner: self, options: nil)
-        let pastWorkView = array[0] as! PastWorkScroll
-        pastWorkView.scrollView = scrollView
-        scrollView.addSubview(pastWorkView)
-        scrollView.backgroundColor = UIColor.whiteColor()
-        scrollView.contentSize = pastWorkView.frame.size
-        obj.customView = scrollView
+        obj.moreInfoViewController = PastWorkViewController.self
         
         cards.append(obj)
         
         cards.append(CardObject(title: "Timeline", body: "A game", imageName: "card-red"))
+        
         collectionView?.registerNib(UINib(nibName: "PassCard", bundle: NSBundle.mainBundle()), forCellWithReuseIdentifier: "pass")
     }
 
@@ -53,8 +47,10 @@ class CabinetViewController: UICollectionViewController {
         card.cardTitle.text = cards[indexPath.row].title
         card.cardBody.text = cards[indexPath.row].body
         card.cardBackground.image = UIImage(named: cards[indexPath.row].imageName)
-        if let customView = cards[indexPath.row].customView {
-            card.customView = customView
+        card.cardObject = cards[indexPath.row]
+        card.delegate = self
+        if let moreVC: AnyClass = cards[indexPath.row].moreInfoViewController {
+            card.showSeeMoreButton = true
         }
         return card
     }
@@ -84,3 +80,12 @@ class CabinetViewController: UICollectionViewController {
     
 }
 
+extension CabinetViewController: CabinetDelegate {
+    
+    func moreInfoButtonPressed(card: CardObject) {
+        if let moreVC: UIViewController.Type = card.moreInfoViewController {
+            self.presentViewController(moreVC(), animated: true, completion: nil)
+        }
+    }
+
+}

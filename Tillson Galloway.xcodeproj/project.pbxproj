@@ -23,6 +23,10 @@
 		C57173751AE1BAD5003BC1CE /* PastWorkScroll.xib in Resources */ = {isa = PBXBuildFile; fileRef = C57173741AE1BAD5003BC1CE /* PastWorkScroll.xib */; };
 		C57173771AE1C582003BC1CE /* PastWorkScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57173761AE1C582003BC1CE /* PastWorkScroll.swift */; };
 		C59034951ADEF16E00EA0A59 /* font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C59034941ADEF16E00EA0A59 /* font.ttf */; };
+		C5F1CAC71AE47288000165CA /* TimedTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F1CAC61AE47288000165CA /* TimedTestViewController.swift */; };
+		C5F1CAC91AE47D42000165CA /* PastWorkDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F1CAC81AE47D42000165CA /* PastWorkDelegate.swift */; };
+		C5F1CACB1AE47D5D000165CA /* PastWorkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F1CACA1AE47D5D000165CA /* PastWorkViewController.swift */; };
+		C5F1CACD1AE48326000165CA /* CabinetDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F1CACC1AE48326000165CA /* CabinetDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +62,10 @@
 		C57173741AE1BAD5003BC1CE /* PastWorkScroll.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PastWorkScroll.xib; sourceTree = "<group>"; };
 		C57173761AE1C582003BC1CE /* PastWorkScroll.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PastWorkScroll.swift; sourceTree = "<group>"; };
 		C59034941ADEF16E00EA0A59 /* font.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = font.ttf; sourceTree = "<group>"; };
+		C5F1CAC61AE47288000165CA /* TimedTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimedTestViewController.swift; sourceTree = "<group>"; };
+		C5F1CAC81AE47D42000165CA /* PastWorkDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PastWorkDelegate.swift; sourceTree = "<group>"; };
+		C5F1CACA1AE47D5D000165CA /* PastWorkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PastWorkViewController.swift; sourceTree = "<group>"; };
+		C5F1CACC1AE48326000165CA /* CabinetDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CabinetDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +149,8 @@
 			children = (
 				C511406A1ADDC73200D76B7E /* ViewController.swift */,
 				C51140831ADE180900D76B7E /* CabinetViewController.swift */,
+				C5F1CACA1AE47D5D000165CA /* PastWorkViewController.swift */,
+				C5F1CAC61AE47288000165CA /* TimedTestViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -148,6 +158,8 @@
 		C51140751ADDC7F700D76B7E /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				C5F1CAC81AE47D42000165CA /* PastWorkDelegate.swift */,
+				C5F1CACC1AE48326000165CA /* CabinetDelegate.swift */,
 				C511407A1ADDFFA100D76B7E /* APIs */,
 				C51140711ADDC7A300D76B7E /* Utilities.swift */,
 				C51140701ADDC7A300D76B7E /* OpeningTransitionManager.swift */,
@@ -305,10 +317,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5F1CAC71AE47288000165CA /* TimedTestViewController.swift in Sources */,
 				C51140791ADDFEC000D76B7E /* CardObject.swift in Sources */,
 				C511407F1ADDFFB300D76B7E /* PassbookLayout.m in Sources */,
 				C57173771AE1C582003BC1CE /* PastWorkScroll.swift in Sources */,
+				C5F1CACD1AE48326000165CA /* CabinetDelegate.swift in Sources */,
 				C51140721ADDC7A300D76B7E /* OpeningTransitionManager.swift in Sources */,
+				C5F1CACB1AE47D5D000165CA /* PastWorkViewController.swift in Sources */,
+				C5F1CAC91AE47D42000165CA /* PastWorkDelegate.swift in Sources */,
 				C51140841ADE180900D76B7E /* CabinetViewController.swift in Sources */,
 				C51140861ADE184800D76B7E /* PassCard.swift in Sources */,
 				C511406B1ADDC73200D76B7E /* ViewController.swift in Sources */,

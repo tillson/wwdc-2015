@@ -173,7 +173,7 @@ CGRect frameForPassAtIndex(NSIndexPath *indexPath, BOOL isLastCell, CGRect b, Pa
     
     // The default size is the normal size
     f.size = m.collapsed.size;
-    f.size.height = 145.0;
+    f.size.height = 160.0;
     
     if (b.origin.y < 0 && e.inheritance > 0.0 && e.bouncesTop)
     {

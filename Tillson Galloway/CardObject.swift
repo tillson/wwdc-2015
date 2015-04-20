@@ -13,7 +13,7 @@ class CardObject {
     let title: String
     let body: String
     let imageName: String
-    var customView: UIView?
+    var moreInfoViewController: UIViewController.Type?
 
     init(title: String, body: String, imageName: String) {
         self.title = title

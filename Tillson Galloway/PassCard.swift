@@ -13,13 +13,15 @@ class PassCard: UICollectionViewCell {
     @IBOutlet var cardTitle: UILabel!
     @IBOutlet var cardBody: UITextView!
     @IBOutlet var cardBackground: UIImageView!
-    
     @IBOutlet var seeMoreButton: UIButton!
     
-    var customView: UIView?
+    var cardObject: CardObject!
+    var delegate: CabinetDelegate?
+    
+    var showSeeMoreButton = false
         {
         didSet {
-            self.seeMoreButton.alpha = 1.0
+            self.seeMoreButton.alpha = showSeeMoreButton ? 1.0 : 0.0
         }
     }
     
@@ -39,18 +41,13 @@ class PassCard: UICollectionViewCell {
     }
     
     @IBAction func buttonPressed(sender: AnyObject) {
-        if let cView = customView {
-            cView.alpha = 1.0
-            superview?.addSubview(cView)
-            cView.frame = CGRect(x: 0, y: 0, width: 0.0, height: 0.0)
-            
-            if let scrollView = cView as? UIScrollView, pastWorkView = scrollView.subviews[0] as? PastWorkScroll {
-                pastWorkView.startSignedInAnimation()
-            }
-            
-            UIView.animateWithDuration(0.5, animations: {
-                cView.frame.size = self.superview!.frame.size
-            })
+        seeMoreButton.enabled = false
+        
+        delegate?.moreInfoButtonPressed(cardObject)
+        
+        let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(3 * Double(NSEC_PER_SEC)))
+        dispatch_after(delayTime, dispatch_get_main_queue()) {
+            self.seeMoreButton.enabled = true
         }
     }
 }
