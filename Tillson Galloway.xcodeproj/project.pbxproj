@@ -33,6 +33,7 @@
 		C5CFBA241AE4AE7B00F131C5 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CFBA211AE4AE7B00F131C5 /* Array.swift */; };
 		C5CFBA251AE4AE7B00F131C5 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CFBA221AE4AE7B00F131C5 /* Operators.swift */; };
 		C5CFBA261AE4AE7B00F131C5 /* Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CFBA231AE4AE7B00F131C5 /* Optional.swift */; };
+		C5D7D06A1AE58FF50082D315 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D7D0691AE58FF50082D315 /* GameViewController.swift */; };
 		C5F1CAC71AE47288000165CA /* TimedTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F1CAC61AE47288000165CA /* TimedTestViewController.swift */; };
 		C5F1CAC91AE47D42000165CA /* PastWorkDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F1CAC81AE47D42000165CA /* PastWorkDelegate.swift */; };
 		C5F1CACB1AE47D5D000165CA /* PastWorkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F1CACA1AE47D5D000165CA /* PastWorkViewController.swift */; };
@@ -86,6 +87,7 @@
 		C5CFBA231AE4AE7B00F131C5 /* Optional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Optional.swift; sourceTree = "<group>"; };
 		C5CFBA271AE4AEA100F131C5 /* Runes-License */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Runes-License"; sourceTree = "<group>"; };
 		C5CFBA281AE4AEBE00F131C5 /* gify-License */ = {isa = PBXFileReference; lastKnownFileType = text; path = "gify-License"; sourceTree = "<group>"; };
+		C5D7D0691AE58FF50082D315 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		C5F1CAC61AE47288000165CA /* TimedTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimedTestViewController.swift; sourceTree = "<group>"; };
 		C5F1CAC81AE47D42000165CA /* PastWorkDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PastWorkDelegate.swift; sourceTree = "<group>"; };
 		C5F1CACA1AE47D5D000165CA /* PastWorkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PastWorkViewController.swift; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 				C51140831ADE180900D76B7E /* CabinetViewController.swift */,
 				C5F1CACA1AE47D5D000165CA /* PastWorkViewController.swift */,
 				C5F1CAC61AE47288000165CA /* TimedTestViewController.swift */,
+				C5D7D0691AE58FF50082D315 /* GameViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -377,6 +380,7 @@
 				C5CFBA191AE4AE1800F131C5 /* AnimatableImageView.swift in Sources */,
 				C5CFBA261AE4AE7B00F131C5 /* Optional.swift in Sources */,
 				C51140791ADDFEC000D76B7E /* CardObject.swift in Sources */,
+				C5D7D06A1AE58FF50082D315 /* GameViewController.swift in Sources */,
 				C5CFBA1E1AE4AE1800F131C5 /* UIImageExtension.swift in Sources */,
 				C511407F1ADDFFB300D76B7E /* PassbookLayout.m in Sources */,
 				C57173771AE1C582003BC1CE /* PastWorkScroll.swift in Sources */,

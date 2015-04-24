@@ -18,6 +18,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         application.setStatusBarHidden(true, withAnimation: UIStatusBarAnimation.Fade)
         
+        window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        
+        window?.rootViewController = GameViewController()
+        window?.makeKeyAndVisible()
         return true
     }
 

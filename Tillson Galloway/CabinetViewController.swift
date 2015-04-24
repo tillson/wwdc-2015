@@ -19,14 +19,16 @@ class CabinetViewController: UICollectionViewController {
         
         cards.append(CardObject(title: "", body: "", imageName: ""))
         cards.append(CardObject(title: "About Me", body: "I am the one who knocks.", imageName: "card-red"))
-        cards.append(CardObject(title: "Education", body: "Hey, that's a Modest Mouse song!", imageName: "card-red"))
         
-        let obj = CardObject(title: "Past Work", body: "In the past, I've worked on a vareity of apps, including: iSignedIn, Timed Test, and a vareity of open source projects at my school.", imageName: "card-orange")
-        obj.moreInfoViewController = PastWorkViewController.self
+        let pastWork = CardObject(title: "Past Work", body: "In the past, I've worked on a vareity of apps, including: iSignedIn, Timed Test, and a vareity of open source projects at my school.", imageName: "card-orange")
+        pastWork.moreInfoViewController = PastWorkViewController.self
+        cards.append(pastWork)
         
-        cards.append(obj)
+        cards.append(CardObject(title: "Technical Skills", body: "none ;(", imageName: "card-green"))
         
-        cards.append(CardObject(title: "Timeline", body: "A game", imageName: "card-red"))
+        let timeline = CardObject(title: "Timeline", body: "A game", imageName: "card-blue")
+        timeline.moreInfoViewController = GameViewController.self
+        cards.append(timeline)
         
         collectionView?.registerNib(UINib(nibName: "PassCard", bundle: NSBundle.mainBundle()), forCellWithReuseIdentifier: "pass")
     }

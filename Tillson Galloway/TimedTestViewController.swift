@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  MathApp
+//  Math Timed Test
 //
 //  Created by Tillson Galloway on 9/10/14.
 //  Copyright (c) 2014 Tillson Galloway. All rights reserved.
