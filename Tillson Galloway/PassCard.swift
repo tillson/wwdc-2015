@@ -23,13 +23,11 @@ class PassCard: UICollectionViewCell {
         {
         didSet {
             self.seeMoreButton.alpha = showSeeMoreButton ? 1.0 : 0.0
+            if cardObject.title == "Timeline" {
+                self.seeMoreButton.setTitle("Play", forState: UIControlState.Normal)
+            }
         }
     }
-    
-    // Eventually will have gradient support(?)
-//    func setBackgroundColor(color: UIColor) {
-//        backgroundColor = color
-//    }
     
     override func awakeFromNib() {
         seeMoreButton.alpha = 0.0
@@ -58,14 +56,16 @@ class PassCard: UICollectionViewCell {
 extension PassCard: UITextViewDelegate {
     
     func textView(textView: UITextView, shouldInteractWithURL URL: NSURL, inRange characterRange: NSRange) -> Bool {
-        let string = (URL.absoluteString! as NSString).substringFromIndex(7) as String
+        let string = (URL.absoluteString! as NSString).substringFromIndex(6) as String
         
         if string == "PorterGaudSchool" {
             let region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 32.7740403, longitude: -79.9644841), span: MKCoordinateSpan(latitudeDelta: 0.007, longitudeDelta: 0.007)) // james bond
-            delegate?.openMapForRegion(region)
-        } else if string == "TheCollegeOfCharleston" {
-            let region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 32.7740403, longitude: -79.9644841), span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
-            delegate?.openMapForRegion(region)
+            delegate?.openMapForRegion(region, title: "Porter-Gaud School")
+        } else if string == "TheCollegeofCharleston" {
+            let region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 32.7837209, longitude: -79.9373006), span: MKCoordinateSpan(latitudeDelta: 0.007, longitudeDelta: 0.007))
+            delegate?.openMapForRegion(region, title: "College of Charleston Campus")
+        } else {
+            println(string)
         }
         return false
     }

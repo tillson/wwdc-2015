@@ -31,7 +31,7 @@
                         <action selector="signedInButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="7q0-Az-m0u"/>
                     </connections>
                 </button>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="signedin" translatesAutoresizingMaskIntoConstraints="NO" id="hMJ-qC-OJA">
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="signedin" translatesAutoresizingMaskIntoConstraints="NO" id="hMJ-qC-OJA">
                     <rect key="frame" x="41" y="108" width="148" height="162"/>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kGF-As-j3J">
@@ -45,7 +45,7 @@
                         <action selector="timedButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="4cV-mL-rMJ"/>
                     </connections>
                 </button>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="timedtest" translatesAutoresizingMaskIntoConstraints="NO" id="QcQ-yW-qPT">
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="timedtest" translatesAutoresizingMaskIntoConstraints="NO" id="QcQ-yW-qPT">
                     <rect key="frame" x="45" y="294" width="140" height="140"/>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fHV-hl-1Q8">
@@ -59,7 +59,7 @@
                         <action selector="openSourceButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="eEt-6a-lIY"/>
                     </connections>
                 </button>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="github" translatesAutoresizingMaskIntoConstraints="NO" id="bKK-xN-suZ">
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="github" translatesAutoresizingMaskIntoConstraints="NO" id="bKK-xN-suZ">
                     <rect key="frame" x="38" y="456" width="155" height="150"/>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="iSignedIn" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i3X-jG-fTZ">
@@ -99,9 +99,10 @@
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
-                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="&quot;Brief&quot; description of the project here" translatesAutoresizingMaskIntoConstraints="NO" id="hm3-37-ts9">
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hm3-37-ts9">
                     <rect key="frame" x="38" y="772" width="299" height="177"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <string key="text">iSignedIn is an app that I am currently making with three College of Charleston Computer majors and real clients.  The app is designed to automatically sign users into conferences using Geolocation or iBeacons, and then store analytics for the conference (or a business) to view in the future.  The app launches June 1, just in time for the WWDC UI Lab.</string>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
@@ -164,6 +165,8 @@
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
+                <outlet property="openSourceImage" destination="bKK-xN-suZ" id="wo7-aO-ike"/>
+                <outlet property="signedInImage" destination="hMJ-qC-OJA" id="0H3-YJ-g5u"/>
                 <outlet property="signedInTechImageView" destination="NBN-Ko-2rn" id="kAz-XR-Pur"/>
                 <outlet property="timedTestImage" destination="QcQ-yW-qPT" id="gsn-yT-JNC"/>
             </connections>

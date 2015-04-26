@@ -25,9 +25,7 @@ class TimedTestViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        navigationController?.interactivePopGestureRecognizer.delegate = nil
-        
+                
         view.backgroundColor = UIColor.darkGrayColor()
         
         showNextProblem(currentProblemView, forProblem: getNewProblem())

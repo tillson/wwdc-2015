@@ -1,0 +1,27 @@
+I have a vareity of computer-related skills.  Here are some of them!
+
+Here's a list of languages I know:
+  - Objective-C and Swift (the most important)
+  - Java
+  - Javascript & node.js
+  - PHP (ew)
+  - HTML/CSS (but who isn't?)
+
+I also am good at an array (get it?) of other technical things, such as:
+  - MySQL
+  - MongoDB
+  - JSON
+  - RESTful APIs and HTTP
+  - Modal View Controller design
+  - Git
+  - Mercurial
+  - Linux/UNIX based command lines
+  - Fixing computers
+
+As a thank you for reading this far, here are some (non-technical) things that I'm *not* good at:
+  - Printers
+  - Dancing
+  - Flirting
+  - Geography
+  - Printers
+  - Making lists

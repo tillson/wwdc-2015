@@ -16,20 +16,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ih9-jW-VbY">
-                                <rect key="frame" x="214" y="492" width="172" height="88"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="88" id="3s4-R8-u5t"/>
-                                    <constraint firstAttribute="width" constant="172" id="KcM-5h-xfQ"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
-                                <state key="normal" title="Lets go!">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="buttonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="hgR-81-y4m"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi there." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eTD-NH-khF">
                                 <rect key="frame" x="33" y="28" width="535" height="101"/>
                                 <constraints>
@@ -39,19 +25,53 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="45"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h28-iG-4EX" customClass="FBShimmeringView">
+                                <rect key="frame" x="208" y="496" width="184" height="84"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ih9-jW-VbY">
+                                        <rect key="frame" x="18" y="6" width="148" height="70"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                        <state key="normal" title="Let's go!">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="hgR-81-y4m"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="184" id="4jz-JI-6lN"/>
+                                    <constraint firstAttribute="height" constant="84" id="vfW-cm-EGF"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My name is Tillson, and I make iPhone apps." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ZxS-o1-7PN">
+                                <rect key="frame" x="144" y="126" width="313" height="74"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="313" id="9Ql-PL-5wm"/>
+                                    <constraint firstAttribute="height" constant="74" id="E8E-To-RoT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="22"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.89411764705882357" green="0.8784313725490196" blue="0.89411764705882357" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="ih9-jW-VbY" secondAttribute="centerX" id="2Bq-mi-gbf"/>
-                            <constraint firstItem="1JI-C1-6mb" firstAttribute="top" secondItem="ih9-jW-VbY" secondAttribute="bottom" constant="20" id="IDL-UM-lqP"/>
+                            <constraint firstItem="ZxS-o1-7PN" firstAttribute="top" secondItem="HjZ-NZ-rZ3" secondAttribute="bottom" constant="106" id="3xM-d2-qJB"/>
+                            <constraint firstItem="1JI-C1-6mb" firstAttribute="top" secondItem="h28-iG-4EX" secondAttribute="bottom" constant="20" id="E5v-1Z-Cdo"/>
+                            <constraint firstAttribute="centerX" secondItem="h28-iG-4EX" secondAttribute="centerX" id="IBp-iS-89x"/>
+                            <constraint firstAttribute="centerX" secondItem="ZxS-o1-7PN" secondAttribute="centerX" constant="-0.5" id="Z8w-kk-yKb"/>
                             <constraint firstItem="eTD-NH-khF" firstAttribute="top" secondItem="HjZ-NZ-rZ3" secondAttribute="bottom" constant="8" id="hGO-WH-1ZS"/>
                             <constraint firstAttribute="centerX" secondItem="eTD-NH-khF" secondAttribute="centerX" constant="-0.5" id="w2d-KT-LVN"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="hlX-ch-RJk"/>
                     <connections>
+                        <outlet property="buttonShimmerView" destination="h28-iG-4EX" id="8Kr-U7-h0L"/>
                         <outlet property="hiLabel" destination="eTD-NH-khF" id="XEG-5H-iUD"/>
-                        <outlet property="nextButton" destination="ih9-jW-VbY" id="SmR-3c-mMR"/>
+                        <outlet property="myNameLabel" destination="ZxS-o1-7PN" id="k92-Hl-UwM"/>
                         <segue destination="8BE-Tb-hbG" kind="show" identifier="cabinetSegue" id="GH3-d4-aa4"/>
                     </connections>
                 </viewController>

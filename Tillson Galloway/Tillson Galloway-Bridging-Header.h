@@ -3,3 +3,6 @@
 //
 
 #import "PassbookLayout.h"
+
+#import "FBShimmering.h"
+#import "FBShimmeringView.h"

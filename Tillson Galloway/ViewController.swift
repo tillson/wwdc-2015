@@ -11,7 +11,8 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet var hiLabel: UILabel!
-    @IBOutlet var nextButton: UIButton!
+    @IBOutlet var buttonShimmerView: FBShimmeringView!
+    @IBOutlet var myNameLabel: UILabel!
     
     let leftLine = CAShapeLayer()
     let rightLine = CAShapeLayer()
@@ -26,25 +27,27 @@ class ViewController: UIViewController {
     let emitter = CAEmitterCell()
     let emitterLayer = CAEmitterLayer()
     
-    let DEV = true
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         navigationController?.delegate = self
         
-        self.nextButton.alpha = 1 // development
-
+        myNameLabel.alpha = 0.0
+        
+        buttonShimmerView.alpha = 0
+        buttonShimmerView.contentView = buttonShimmerView.subviews[0] as! UIView
+        buttonShimmerView.shimmering = true
+        buttonShimmerView.shimmeringSpeed = 60
+        buttonShimmerView.shimmeringPauseDuration = 0.01
+        
         animator = UIDynamicAnimator(referenceView: dynamicView)
         
-        if !DEV {
-            nextButton.alpha = 0
-        }
         hiLabel.frame.origin.y = view.frame.width - 40
         hiLabel.alpha = 0
         UIView.animateWithDuration(1.0, delay: 0.0, usingSpringWithDamping: 0.9, initialSpringVelocity: 0.1, options: UIViewAnimationOptions.CurveEaseInOut, animations: {
                 self.hiLabel.alpha = 1
-                self.hiLabel.frame.origin.y = 28
+                self.hiLabel.frame.origin.y = 8
+            
             }, completion: { completed in
                 self.animateImage()
         })
@@ -53,6 +56,10 @@ class ViewController: UIViewController {
         let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(3.0 * Double(NSEC_PER_SEC)))
         dispatch_after(delayTime, dispatch_get_main_queue()) {
             self.animateBubbles()
+            UIView.animateWithDuration(0.25, animations: {
+                self.buttonShimmerView.alpha = 1.0
+                self.myNameLabel.alpha = 1.0
+            })
         }
     }
     
@@ -99,7 +106,7 @@ class ViewController: UIViewController {
         view.addSubview(dynamicView)
 
         imageBall.frame = CGRect(x: dynamicView.frame.width / 2 - 80, y: 0, width: 160, height: 160)
-        imageBall.image = UIImage(named: "placeholder")
+        imageBall.image = UIImage(named: "me") // #photogenic
         imageBall.layer.cornerRadius = 80.0
         imageBall.clipsToBounds = true
         dynamicView.addSubview(imageBall)

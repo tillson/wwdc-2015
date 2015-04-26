@@ -12,6 +12,6 @@ import MapKit
 protocol CabinetDelegate {
     
     func moreInfoButtonPressed(card: CardObject)
-    func openMapForRegion(region: MKCoordinateRegion)
+    func openMapForRegion(region: MKCoordinateRegion, title: String)
     
 }

@@ -26,7 +26,8 @@
 		C58135C61AEC302200065633 /* bio.txt in Resources */ = {isa = PBXBuildFile; fileRef = C58135C51AEC302200065633 /* bio.txt */; };
 		C58135C81AEC3F9900065633 /* skills.txt in Resources */ = {isa = PBXBuildFile; fileRef = C58135C71AEC3F9900065633 /* skills.txt */; };
 		C58135CA1AEC3FAD00065633 /* game.txt in Resources */ = {isa = PBXBuildFile; fileRef = C58135C91AEC3FAD00065633 /* game.txt */; };
-		C58135CC1AEC406D00065633 /* cheatmode.png in Resources */ = {isa = PBXBuildFile; fileRef = C58135CB1AEC406D00065633 /* cheatmode.png */; };
+		C58135D41AEC887400065633 /* FBShimmeringLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = C58135D11AEC887400065633 /* FBShimmeringLayer.m */; };
+		C58135D51AEC887400065633 /* FBShimmeringView.m in Sources */ = {isa = PBXBuildFile; fileRef = C58135D31AEC887400065633 /* FBShimmeringView.m */; };
 		C5CFBA181AE4AE1800F131C5 /* Animatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CFBA101AE4AE1800F131C5 /* Animatable.swift */; };
 		C5CFBA191AE4AE1800F131C5 /* AnimatableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CFBA111AE4AE1800F131C5 /* AnimatableImageView.swift */; };
 		C5CFBA1A1AE4AE1800F131C5 /* AnimatedFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CFBA121AE4AE1800F131C5 /* AnimatedFrame.swift */; };
@@ -38,6 +39,9 @@
 		C5CFBA251AE4AE7B00F131C5 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CFBA221AE4AE7B00F131C5 /* Operators.swift */; };
 		C5CFBA261AE4AE7B00F131C5 /* Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CFBA231AE4AE7B00F131C5 /* Optional.swift */; };
 		C5D7D06A1AE58FF50082D315 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D7D0691AE58FF50082D315 /* GameViewController.swift */; };
+		C5EDA9F61AECA90E00035EFE /* backbutton.gif in Resources */ = {isa = PBXBuildFile; fileRef = C5EDA9F51AECA90E00035EFE /* backbutton.gif */; };
+		C5EDA9F81AECA91500035EFE /* backbutton-selected.gif in Resources */ = {isa = PBXBuildFile; fileRef = C5EDA9F71AECA91500035EFE /* backbutton-selected.gif */; };
+		C5EDA9FA1AECA99900035EFE /* PocketTransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5EDA9F91AECA99900035EFE /* PocketTransitionManager.swift */; };
 		C5F1CAC71AE47288000165CA /* TimedTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F1CAC61AE47288000165CA /* TimedTestViewController.swift */; };
 		C5F1CAC91AE47D42000165CA /* PastWorkDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F1CAC81AE47D42000165CA /* PastWorkDelegate.swift */; };
 		C5F1CACB1AE47D5D000165CA /* PastWorkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F1CACA1AE47D5D000165CA /* PastWorkViewController.swift */; };
@@ -81,7 +85,11 @@
 		C58135C51AEC302200065633 /* bio.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bio.txt; sourceTree = "<group>"; };
 		C58135C71AEC3F9900065633 /* skills.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = skills.txt; sourceTree = "<group>"; };
 		C58135C91AEC3FAD00065633 /* game.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = game.txt; sourceTree = "<group>"; };
-		C58135CB1AEC406D00065633 /* cheatmode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cheatmode.png; sourceTree = "<group>"; };
+		C58135CF1AEC887400065633 /* FBShimmering.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FBShimmering.h; path = APIs/FBShimmering.h; sourceTree = "<group>"; };
+		C58135D01AEC887400065633 /* FBShimmeringLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FBShimmeringLayer.h; path = APIs/FBShimmeringLayer.h; sourceTree = "<group>"; };
+		C58135D11AEC887400065633 /* FBShimmeringLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FBShimmeringLayer.m; path = APIs/FBShimmeringLayer.m; sourceTree = "<group>"; };
+		C58135D21AEC887400065633 /* FBShimmeringView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FBShimmeringView.h; path = APIs/FBShimmeringView.h; sourceTree = "<group>"; };
+		C58135D31AEC887400065633 /* FBShimmeringView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FBShimmeringView.m; path = APIs/FBShimmeringView.m; sourceTree = "<group>"; };
 		C5CFBA101AE4AE1800F131C5 /* Animatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animatable.swift; sourceTree = "<group>"; };
 		C5CFBA111AE4AE1800F131C5 /* AnimatableImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatableImageView.swift; sourceTree = "<group>"; };
 		C5CFBA121AE4AE1800F131C5 /* AnimatedFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedFrame.swift; sourceTree = "<group>"; };
@@ -96,6 +104,9 @@
 		C5CFBA271AE4AEA100F131C5 /* Runes-License */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Runes-License"; sourceTree = "<group>"; };
 		C5CFBA281AE4AEBE00F131C5 /* gify-License */ = {isa = PBXFileReference; lastKnownFileType = text; path = "gify-License"; sourceTree = "<group>"; };
 		C5D7D0691AE58FF50082D315 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		C5EDA9F51AECA90E00035EFE /* backbutton.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = backbutton.gif; sourceTree = "<group>"; };
+		C5EDA9F71AECA91500035EFE /* backbutton-selected.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "backbutton-selected.gif"; sourceTree = "<group>"; };
+		C5EDA9F91AECA99900035EFE /* PocketTransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PocketTransitionManager.swift; sourceTree = "<group>"; };
 		C5F1CAC61AE47288000165CA /* TimedTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimedTestViewController.swift; sourceTree = "<group>"; };
 		C5F1CAC81AE47D42000165CA /* PastWorkDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PastWorkDelegate.swift; sourceTree = "<group>"; };
 		C5F1CACA1AE47D5D000165CA /* PastWorkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PastWorkViewController.swift; sourceTree = "<group>"; };
@@ -199,6 +210,7 @@
 				C511407A1ADDFFA100D76B7E /* APIs */,
 				C51140711ADDC7A300D76B7E /* Utilities.swift */,
 				C51140701ADDC7A300D76B7E /* OpeningTransitionManager.swift */,
+				C5EDA9F91AECA99900035EFE /* PocketTransitionManager.swift */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -227,20 +239,21 @@
 		C511407A1ADDFFA100D76B7E /* APIs */ = {
 			isa = PBXGroup;
 			children = (
+				C58135CE1AEC885100065633 /* Shimmer */,
 				C5CFBA201AE4AE6200F131C5 /* Runes */,
 				C5CFBA1F1AE4AE1E00F131C5 /* gify */,
-				C511407B1ADDFFA700D76B7E /* Objective-C */,
+				C511407B1ADDFFA700D76B7E /* Passbook */,
 			);
 			name = APIs;
 			sourceTree = "<group>";
 		};
-		C511407B1ADDFFA700D76B7E /* Objective-C */ = {
+		C511407B1ADDFFA700D76B7E /* Passbook */ = {
 			isa = PBXGroup;
 			children = (
 				C511407D1ADDFFB300D76B7E /* PassbookLayout.h */,
 				C511407E1ADDFFB300D76B7E /* PassbookLayout.m */,
 			);
-			name = "Objective-C";
+			name = Passbook;
 			sourceTree = "<group>";
 		};
 		C51140821ADE156600D76B7E /* Assets */ = {
@@ -248,13 +261,26 @@
 			children = (
 				C51140511ADDC6AD00D76B7E /* Images.xcassets */,
 				C5F1CACE1AE4A273000165CA /* signedintech.gif */,
-				C58135CB1AEC406D00065633 /* cheatmode.png */,
+				C5EDA9F51AECA90E00035EFE /* backbutton.gif */,
+				C5EDA9F71AECA91500035EFE /* backbutton-selected.gif */,
 				C58135C11AEC1C7400065633 /* timeline.json */,
 				C58135C51AEC302200065633 /* bio.txt */,
 				C58135C71AEC3F9900065633 /* skills.txt */,
 				C58135C91AEC3FAD00065633 /* game.txt */,
 			);
 			name = Assets;
+			sourceTree = "<group>";
+		};
+		C58135CE1AEC885100065633 /* Shimmer */ = {
+			isa = PBXGroup;
+			children = (
+				C58135CF1AEC887400065633 /* FBShimmering.h */,
+				C58135D01AEC887400065633 /* FBShimmeringLayer.h */,
+				C58135D11AEC887400065633 /* FBShimmeringLayer.m */,
+				C58135D21AEC887400065633 /* FBShimmeringView.h */,
+				C58135D31AEC887400065633 /* FBShimmeringView.m */,
+			);
+			name = Shimmer;
 			sourceTree = "<group>";
 		};
 		C5CFBA1F1AE4AE1E00F131C5 /* gify */ = {
@@ -366,13 +392,14 @@
 			files = (
 				C511406D1ADDC74500D76B7E /* Main.storyboard in Resources */,
 				C51140551ADDC6AD00D76B7E /* LaunchScreen.xib in Resources */,
+				C5EDA9F81AECA91500035EFE /* backbutton-selected.gif in Resources */,
 				C57173751AE1BAD5003BC1CE /* PastWorkScroll.xib in Resources */,
 				C58135C21AEC1C7400065633 /* timeline.json in Resources */,
 				C58135CA1AEC3FAD00065633 /* game.txt in Resources */,
 				C51140811ADE0C4100D76B7E /* PassCard.xib in Resources */,
 				C58135C81AEC3F9900065633 /* skills.txt in Resources */,
-				C58135CC1AEC406D00065633 /* cheatmode.png in Resources */,
 				C58135C61AEC302200065633 /* bio.txt in Resources */,
+				C5EDA9F61AECA90E00035EFE /* backbutton.gif in Resources */,
 				C51140521ADDC6AD00D76B7E /* Images.xcassets in Resources */,
 				C5F1CACF1AE4A273000165CA /* signedintech.gif in Resources */,
 			);
@@ -396,9 +423,11 @@
 				C5CFBA191AE4AE1800F131C5 /* AnimatableImageView.swift in Sources */,
 				C5CFBA261AE4AE7B00F131C5 /* Optional.swift in Sources */,
 				C51140791ADDFEC000D76B7E /* CardObject.swift in Sources */,
+				C5EDA9FA1AECA99900035EFE /* PocketTransitionManager.swift in Sources */,
 				C5D7D06A1AE58FF50082D315 /* GameViewController.swift in Sources */,
 				C5CFBA1E1AE4AE1800F131C5 /* UIImageExtension.swift in Sources */,
 				C511407F1ADDFFB300D76B7E /* PassbookLayout.m in Sources */,
+				C58135D51AEC887400065633 /* FBShimmeringView.m in Sources */,
 				C57173771AE1C582003BC1CE /* PastWorkScroll.swift in Sources */,
 				C5F1CACD1AE48326000165CA /* CabinetDelegate.swift in Sources */,
 				C51140721ADDC7A300D76B7E /* OpeningTransitionManager.swift in Sources */,
@@ -409,6 +438,7 @@
 				C51140841ADE180900D76B7E /* CabinetViewController.swift in Sources */,
 				C51140861ADE184800D76B7E /* PassCard.swift in Sources */,
 				C511406B1ADDC73200D76B7E /* ViewController.swift in Sources */,
+				C58135D41AEC887400065633 /* FBShimmeringLayer.m in Sources */,
 				C5CFBA1A1AE4AE1800F131C5 /* AnimatedFrame.swift in Sources */,
 				C5CFBA1D1AE4AE1800F131C5 /* ImageSourceHelpers.swift in Sources */,
 				C5CFBA251AE4AE7B00F131C5 /* Operators.swift in Sources */,

@@ -13,9 +13,13 @@ class CabinetViewController: UICollectionViewController {
     
     var cards = [CardObject]()
     
+    var overlayView: UIView?
+    
+    let transitionManager = PocketTransitionManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationController?.delegate = nil
+        navigationController?.delegate = self
         
         cards.append(CardObject(title: "", body: "", imageName: ""))
         
@@ -25,36 +29,40 @@ class CabinetViewController: UICollectionViewController {
         pastWork.moreInfoViewController = PastWorkViewController.self
         cards.append(pastWork)
         
-        cards.append(CardObject(title: "Technical Skills", body: "none ;(", imageName: "card-green"))
+        cards.append(CardObject(title: "Technical Skills", body: Utilities.getFileContents("skills", type: "txt"), imageName: "card-green"))
         
-        let timeline = CardObject(title: "Timeline", body: "A game", imageName: "card-blue")
+        let timeline = CardObject(title: "Timeline", body: Utilities.getFileContents("game", type: "txt"), imageName: "card-blue")
         timeline.moreInfoViewController = GameViewController.self
         cards.append(timeline)
         
         collectionView?.registerNib(UINib(nibName: "PassCard", bundle: NSBundle.mainBundle()), forCellWithReuseIdentifier: "pass")
+        
     }
-
+    
     func getBioText() -> NSAttributedString {
-        let path = NSBundle.mainBundle().pathForResource("bio", ofType: "txt")!
-        let data = NSData(contentsOfFile: path)
-        var originalString = NSString(data: data!, encoding: NSASCIIStringEncoding) as! String
+        
+        var originalString = Utilities.getFileContents("bio", type: "txt")
         var attributedString = NSMutableAttributedString(string: originalString)
-
-        let textRange = NSMakeRange(0, attributedString.length)
-        let regex = NSRegularExpression(pattern: "\\{(.*?)\\}", options: nil, error: nil)!
+        
+        var textRange = NSRange(location: 0, length: attributedString.length)
+        let regex = NSRegularExpression(pattern: "\\[(.*?)\\]", options: nil, error: nil)!
         
         let matches = regex.matchesInString(originalString, options: NSMatchingOptions.WithoutAnchoringBounds, range: textRange)
         attributedString.addAttributes([NSForegroundColorAttributeName: UIColor.whiteColor()], range: textRange)
 
         for match in matches as! [NSTextCheckingResult] {
-            let matchRange = match.range
+            let matchRange = NSRange(location: match.range.location, length: match.range.length - 1)
             var text = (originalString as NSString).substringWithRange(match.range)
-            text = text.stringByReplacingOccurrencesOfString("{", withString: "").stringByReplacingOccurrencesOfString("}", withString: "").stringByReplacingOccurrencesOfString("-", withString: "").stringByReplacingOccurrencesOfString(" ", withString: "")
+            text = text.stringByReplacingOccurrencesOfString("[", withString: "").stringByReplacingOccurrencesOfString("]", withString: "").stringByReplacingOccurrencesOfString("-", withString: "").stringByReplacingOccurrencesOfString(" ", withString: "")
             attributedString.beginEditing()
-            attributedString.addAttribute(NSLinkAttributeName, value: NSURL(string: "http://\(text)")!, range: matchRange)
-            attributedString.addAttribute(NSForegroundColorAttributeName, value: UIColor.blueColor(), range: matchRange)
+            attributedString.addAttribute(NSLinkAttributeName, value: "map://\(text)", range: matchRange)
+            attributedString.addAttribute(NSForegroundColorAttributeName, value: UIColor.whiteColor(), range: matchRange)
+            attributedString.addAttribute(NSUnderlineStyleAttributeName, value: 1, range: matchRange)
             attributedString.endEditing()
         }
+        attributedString.mutableString.replaceOccurrencesOfString("]", withString: "", options: NSStringCompareOptions.CaseInsensitiveSearch, range: NSRange(location: 0, length: attributedString.mutableString.length))
+        attributedString.mutableString.replaceOccurrencesOfString("[", withString: "", options: NSStringCompareOptions.CaseInsensitiveSearch, range: NSRange(location: 0, length: attributedString.mutableString.length))
+
         
         return attributedString
     }
@@ -76,6 +84,7 @@ class CabinetViewController: UICollectionViewController {
         card.cardBody.text = cards[indexPath.row].body
         if let attributed = cards[indexPath.row].attributedBody {
             card.cardBody.attributedText = attributed
+            card.cardBody.linkTextAttributes = [NSForegroundColorAttributeName:UIColor.fromRGB(0xADD8E6)]
         }
         card.cardBackground.image = UIImage(named: cards[indexPath.row].imageName)
         card.cardObject = cards[indexPath.row]
@@ -87,6 +96,10 @@ class CabinetViewController: UICollectionViewController {
     }
     
     override func collectionView(collectionView: UICollectionView, shouldSelectItemAtIndexPath indexPath: NSIndexPath) -> Bool {
+        if overlayView != nil {
+            return false
+        }
+
         if indexPath.item == 0 {
             return false
         }
@@ -109,6 +122,11 @@ class CabinetViewController: UICollectionViewController {
         collectionView.scrollEnabled = false
     }
     
+    
+    func didTouchOverlay(touchEvent: UITapGestureRecognizer) {
+        closeMap()
+    }
+    
 }
 
 extension CabinetViewController: CabinetDelegate {
@@ -119,24 +137,80 @@ extension CabinetViewController: CabinetDelegate {
         }
     }
     
-    func openMapForRegion(region: MKCoordinateRegion) {
+    func openMapForRegion(region: MKCoordinateRegion, title: String) {
+        if overlayView != nil {
+            return
+        }
+        
+        overlayView = UIView()
+        overlayView?.frame = view.frame
+        
         let popupView = UIView()
         popupView.frame = view.frame
         popupView.backgroundColor = UIColor.blackColor()
         popupView.alpha = 0.0
-        view.addSubview(popupView)
+        overlayView!.addSubview(popupView)
         
+        let tapGesture = UITapGestureRecognizer(target: self, action: "didTouchOverlay:")
+        tapGesture.numberOfTapsRequired = 1
+        popupView.addGestureRecognizer(tapGesture)
+
         let mapView = MKMapView()
+        mapView.frame = CGRect(x: view.frame.width / 2, y: view.frame.height / 2, width: 0, height: 0)
         mapView.mapType = .Hybrid
         mapView.setRegion(region, animated: false)
-        view.addSubview(mapView)
         mapView.layer.borderColor = UIColor.whiteColor().CGColor
         mapView.layer.borderWidth = 2.0
+        overlayView!.addSubview(mapView)
+        
+        let button = UIButton(frame: CGRect(x: view.frame.width -  self.view.frame.width / 9 - 5, y: self.view.frame.width / 2.5 - 20, width: 20, height: 20))
+        button.setTitle("x", forState: .Normal)
+        button.titleLabel?.font = UIFont.systemFontOfSize(20.0)
+        button.addTarget(self, action: "closeMap", forControlEvents: .TouchUpInside)
+        overlayView!.addSubview(button)
+        
+        let point = MKPointAnnotation()
+        point.coordinate = region.center
+        point.title = title
+        mapView.addAnnotation(point)
         
         UIView.animateWithDuration(0.25, animations: {
             popupView.alpha = 0.3
             mapView.alpha = 1.0
-            mapView.frame = CGRect(x: self.view.frame.width / 9, y: self.view.frame.width / 3, width: self.view.frame.width / 1.25, height: self.view.frame.width / 1.25)
+            mapView.frame = CGRect(x: self.view.frame.width / 9, y: self.view.frame.width / 2.5, width: self.view.frame.width / 1.25, height: self.view.frame.width / 1.25)
         })
+        
+        view.addSubview(overlayView!)
+    }
+    
+    func closeMap() {
+        if let overlay = overlayView {
+            UIView.animateWithDuration(0.25, animations: {
+                for subviewAny in overlay.subviews {
+                    if let subview = subviewAny as? UIView {
+                        if subview is MKMapView {
+                            subview.frame = CGRect(x: self.view.frame.width / 2, y: self.view.frame.height / 2, width: 0, height: 0)
+                            subview.alpha = 0.0
+                        } else {
+                            subview.alpha = 0.0
+                        }
+                    }
+                }
+                }, completion: { completion in
+                    self.overlayView!.removeFromSuperview()
+                    self.overlayView = nil
+            })
+            
+        }
+        
     }
 }
+
+
+extension CabinetViewController: UINavigationControllerDelegate {
+    
+    func navigationController(navigationController: UINavigationController, animationControllerForOperation operation: UINavigationControllerOperation, fromViewController fromVC: UIViewController, toViewController toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return transitionManager
+    }
+}
+

@@ -30,6 +30,7 @@ class GameViewController: UIViewController {
     
     var offset = 0.0
     
+    var pregameViews = [UIView]()
     
     var inProgress = false
     
@@ -41,7 +42,30 @@ class GameViewController: UIViewController {
         
         sceneView.frame = view.frame
         view.addSubview(sceneView)
-
+        
+        let startButton = UIButton(frame: CGRect(x: view.frame.width / 2 - 100, y: view.frame.height / 2, width: 200, height: 80))
+        startButton.setBackgroundImage(UIImage(named: "playgame"), forState: UIControlState.Normal)
+        startButton.setBackgroundImage(UIImage(named: "playgame-selected"), forState: UIControlState.Highlighted)
+        startButton.addTarget(self, action: "start", forControlEvents: .TouchUpInside)
+        view.addSubview(startButton)
+        pregameViews.append(startButton)
+    
+        let label = UILabel(frame: CGRect(x: 0, y: 30, width: view.frame.width, height: 50))
+        label.text = "Flappy Timeline"
+        label.font = UIFont(name: "HelveticaNeue-Thin", size: 48)
+        label.textAlignment = .Center
+        label.textColor = UIColor.whiteColor()
+        view.addSubview(label)
+        pregameViews.append(label)
+        
+        let subTitleLabel = UILabel(frame: CGRect(x: 0, y: 82, width: view.frame.width, height: 30))
+        subTitleLabel.text = "Another Flappy Bird Clone"
+        subTitleLabel.font = UIFont(name: "HelveticaNeue-Thin", size: 28)
+        subTitleLabel.textColor = UIColor.fromRGB(0xeeeeee)
+        subTitleLabel.textAlignment = .Center
+        view.addSubview(subTitleLabel)
+        pregameViews.append(subTitleLabel)
+        
         sceneView.backgroundColor = UIColor(red: 133.0 / 255.0, green: 197.0 / 255.0, blue: 207.0 / 255.0, alpha: 1.0)
         sceneView.showsStatistics = true
         
@@ -61,18 +85,26 @@ class GameViewController: UIViewController {
         
         sceneView.autoenablesDefaultLighting = true
         
-        let characterGeom = SCNBox(width: 5, height: 5, length: 5, chamferRadius: 0)
-        characterGeom.firstMaterial?.diffuse.contents = UIColor.redColor()
+    }
+    
+    func start() {
+        for subview in pregameViews {
+            subview.removeFromSuperview()
+        }
+        pregameViews.removeAll(keepCapacity: false)
+        
+        let characterGeom = SCNBox(width: 10, height: 10, length: 10, chamferRadius: 0)
+        characterGeom.firstMaterial?.diffuse.contents = UIImage(named: "me")
         
         character = SCNNode(geometry: characterGeom)
         character.position = SCNVector3(x: 0, y: 0, z: -15)
         character.physicsBody = SCNPhysicsBody(type: SCNPhysicsBodyType.Dynamic, shape: SCNPhysicsShape(node: character, options: nil))
-        character.physicsBody?.mass = 1.0
+        character.physicsBody?.mass = GameCheatMode ? 0.0 : 1.0
         character.physicsBody?.rollingFriction = 1.0
         character.physicsBody?.damping = 0.0
         character.physicsBody?.categoryBitMask = CollisionCategoryPlayer
         character.physicsBody?.collisionBitMask = CollisionCategoryKiller
-
+        
         mainNode.addChildNode(character)
         
         
@@ -91,7 +123,7 @@ class GameViewController: UIViewController {
         // TODO: Take this off the main queue
         motionManager.startDeviceMotionUpdatesUsingReferenceFrame(CMAttitudeReferenceFrame.XArbitraryCorrectedZVertical, toQueue: NSOperationQueue.mainQueue(), withHandler: {(motion, error) -> Void in
             let value = self.offset + motion.attitude.roll * 4
-        
+            
             // Snap into place
             if (abs(value) > 0.1 && (abs(value) < 1.70 || abs(value) > 1.90)) {
                 self.mainNode.eulerAngles = SCNVector3(x: 0, y: Float(value), z: 0)
@@ -110,7 +142,6 @@ class GameViewController: UIViewController {
         sceneView.gestureRecognizers = gestureRecognizers as [AnyObject]
         
         inProgress = true
-        
     }
     
     func setupScenery() {
@@ -137,15 +168,21 @@ class GameViewController: UIViewController {
             return
         }
         timelineIndex++
+        if timelineIndex >= timelineArray.count {
+            finish(true)
+            return
+        }
         
         let moveAction = SCNAction.moveByX(0, y: 0, z: 150, duration: 6.5)
         let removeAction = SCNAction.removeFromParentNode()
         let action = SCNAction.sequence([moveAction, removeAction])
         
+        let offset = CGFloat(arc4random_uniform(50)) * -1
+        
         let pipeNode = SCNNode()
         pipeNode.position = SCNVector3(x: 0, y: 40, z: -70)
         
-        let pipeA = SCNBox(width: 50, height: 60, length: 5, chamferRadius: 0)
+        let pipeA = SCNBox(width: 50, height: 60 + CGFloat(abs(offset)), length: 5, chamferRadius: 0)
         pipeA.firstMaterial?.diffuse.contents = UIColor.fromRGB(0x17A633)
         let pipeANode = SCNNode(geometry: pipeA)
         pipeANode.physicsBody = SCNPhysicsBody(type: SCNPhysicsBodyType.Kinematic, shape: SCNPhysicsShape(node: pipeANode, options: nil))
@@ -167,7 +204,7 @@ class GameViewController: UIViewController {
         let pipeB = SCNBox(width: 50, height: 60, length: 5, chamferRadius: 0)
         pipeB.firstMaterial?.diffuse.contents = UIColor.fromRGB(0x17A633)
         let pipeBNode = SCNNode(geometry: pipeB)
-        pipeBNode.position = SCNVector3(x: 0, y: -90, z: -30)
+        pipeBNode.position = SCNVector3(x: 0, y: Float(-90.0 + offset), z: -30)
         pipeBNode.physicsBody = SCNPhysicsBody(type: SCNPhysicsBodyType.Kinematic, shape: SCNPhysicsShape(node: pipeBNode, options: nil))
         pipeBNode.physicsBody?.categoryBitMask = CollisionCategoryKiller
         pipeBNode.physicsBody?.collisionBitMask = CollisionCategoryPlayer
@@ -178,15 +215,10 @@ class GameViewController: UIViewController {
         mainNode.addChildNode(pipeNode)
     }
     
-    func handleTap(gestureRecognize: UIGestureRecognizer) {
+    func handleTap(gestureRecognizer: UIGestureRecognizer) {
         if inProgress {
             character.physicsBody?.velocity = SCNVector3(x: 0, y: 0, z: 0)
             character.physicsBody?.applyForce(SCNVector3(x: 0, y: 30.0, z: 0), impulse: true)
-        } else {
-            // check what is being tapped
-            if !GameCheatMode {
-                
-            }
         }
     }
     
@@ -194,23 +226,26 @@ class GameViewController: UIViewController {
         inProgress = false
         mainNode.removeActionForKey("masterPipe")
         moving.removeAllActions()
-        character.position = SCNVector3(x: 0, y: -30, z: -15)
-        character.physicsBody?.velocity = SCNVector3(x: 0, y: 0, z: 0)
+        character.removeFromParentNode()
+        
         let text = SCNNode(geometry: SCNText(string: (win ? "You did it!" : "You lose."), extrusionDepth: 0.3))
         var v1 = SCNVector3(x: 0, y: 0, z: 0)
         text.getBoundingBoxMin(nil, max: &v1)
         text.position = SCNVector3(x: -(v1.x / 2), y: -10, z: 0)
         mainNode.addChildNode(text)
-        if !win && !GameCheatMode {
-            let helpPlane = SCNPlane(width: 40, height: 12)
-            helpPlane.firstMaterial?.diffuse.contents = UIImage(named: "cheatmode.gif")
-            let helpNode = SCNNode(geometry: helpPlane)
-            helpNode.position = SCNVector3(x: 6, y: character.position.y + 9, z: -15)
-            mainNode.addChildNode(helpNode)
-        }
-        character.physicsBody?.velocityFactor = SCNVector3(x: 0, y: 0, z: 0)
+        
+        let backButton = UIButton(frame: CGRect(x: view.frame.width / 2 - 100, y: view.frame.height / 4, width: 200, height: 80))
+        backButton.setBackgroundImage(UIImage(named: "backbutton.gif"), forState: UIControlState.Normal)
+        backButton.setBackgroundImage(UIImage(named: "backbutton-selected.gif"), forState: UIControlState.Highlighted)
+        backButton.addTarget(self, action: "goBack", forControlEvents: .TouchUpInside)
+        view.addSubview(backButton)
+        
     }
 
+    
+    func goBack() {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
     
 }
 
@@ -225,7 +260,5 @@ extension GameViewController: SCNPhysicsContactDelegate {
         if contact.nodeB.physicsBody!.categoryBitMask == CollisionCategoryPlayer && contact.nodeA.physicsBody?.categoryBitMask == CollisionCategoryKiller {
             finish(false)
         }
-        
     }
-    
 }

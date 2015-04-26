@@ -10,9 +10,17 @@ import UIKit
 
 var GameCheatMode = false
 
+class Utilities {
+    
+    class func getFileContents(name: String, type: String) -> String {
+        let path = NSBundle.mainBundle().pathForResource(name, ofType: type)!
+        let data = NSData(contentsOfFile: path)
+        return NSString(data: data!, encoding: NSASCIIStringEncoding) as! String
+    }
+}
+
 
 extension UIView {
-    
     func getImage() -> UIImage {
         UIGraphicsBeginImageContextWithOptions(self.bounds.size, self.opaque, 0.0)
         self.layer.renderInContext(UIGraphicsGetCurrentContext())
