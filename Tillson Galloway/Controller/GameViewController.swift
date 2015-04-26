@@ -80,7 +80,8 @@ class GameViewController: UIViewController {
         
         cameraNode.camera = SCNCamera()
         cameraNode.position = SCNVector3(x: 0, y: 0, z: 80)
-        cameraNode.camera?.zFar = 200.0
+        cameraNode.camera?.zFar = 275.0
+
         scene.rootNode.addChildNode(cameraNode)
         
         sceneView.autoenablesDefaultLighting = true
@@ -122,7 +123,7 @@ class GameViewController: UIViewController {
         
         // TODO: Take this off the main queue
         motionManager.startDeviceMotionUpdatesUsingReferenceFrame(CMAttitudeReferenceFrame.XArbitraryCorrectedZVertical, toQueue: NSOperationQueue.mainQueue(), withHandler: {(motion, error) -> Void in
-            let value = motion.attitude.roll * 4
+            let value = motion.attitude.roll * 1.5
         
             // Snap into place
             if abs(value) > 2 {
@@ -148,7 +149,7 @@ class GameViewController: UIViewController {
     }
     
     func setupScenery() {
-        let groundGeom = SCNBox(width: 150, height: 1, length: 250, chamferRadius: 0)
+        let groundGeom = SCNBox(width: 200, height: 1, length: 275, chamferRadius: 0)
         groundGeom.firstMaterial?.diffuse.contents = UIColor.fromRGB(0x00ff00)
         let groundNode = SCNNode(geometry: groundGeom)
         groundNode.position = SCNVector3(x: 0, y: -80, z: -175)

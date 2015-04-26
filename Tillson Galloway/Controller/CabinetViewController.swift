@@ -25,7 +25,7 @@ class CabinetViewController: UICollectionViewController {
         
         cards.append(CardObject(title: "About Me", body: "", imageName: "card-red", attributedBody: getBioText()))
 
-        let pastWork = CardObject(title: "Past Work", body: "In the past, I've worked on a vareity of apps, including: iSignedIn, Timed Test, and a vareity of open source projects at my school.", imageName: "card-orange")
+        let pastWork = CardObject(title: "Past Work", body: "In the past, I've worked on a variety of apps, including: iSignedIn, Timed Test, and an array of open source projects at my school.", imageName: "card-orange")
         pastWork.moreInfoViewController = PastWorkViewController.self
         cards.append(pastWork)
         

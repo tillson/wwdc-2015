@@ -1,11 +1,11 @@
-I have a vareity of computer-related skills.  Here are some of them!
+I have a variety of computer-related skills.  Here are some of them!
 
 Here's a list of languages I know:
   - Objective-C and Swift (the most important)
   - Java
   - Javascript & node.js
   - PHP (ew)
-  - HTML/CSS (but who isn't?)
+  - HTML/CSS (but who doesn't?)
 
 I also am good at an array (get it?) of other technical things, such as:
   - MySQL

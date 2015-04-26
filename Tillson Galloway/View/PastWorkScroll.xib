@@ -109,7 +109,7 @@
                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hkc-Ch-0N3">
                     <rect key="frame" x="38" y="2122" width="299" height="233"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <string key="text">In addition to these and other projects, I have done a vareity of open source projects.  The projects vary from simple things like a (node.js) counter of Chipotle visits, to a full node app using the MEAN stack which acts as a live updating page tracking my school's daily schedule, complete with browser cookies creating a personalized, per-student experience.  This app will be available on GitHub under a MIT license as soon as WWDC Scholarship submissions close.</string>
+                    <string key="text">In addition to these and other projects, I have done a variety of open source projects.  The projects vary from simple things like a (node.js) counter of Chipotle visits, to a full node app using the MEAN stack which acts as a live updating page tracking my school's daily schedule, complete with browser cookies creating a personalized, per-student experience.  This WWDC app will be available on GitHub under a MIT license as soon as WWDC Scholarship submissions close.</string>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>

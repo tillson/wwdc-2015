@@ -46,6 +46,9 @@
 		C54E5E5B1AECC1B0001C64E2 /* PassCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = C54E5E561AECC1B0001C64E2 /* PassCard.xib */; };
 		C54E5E5C1AECC1B0001C64E2 /* PastWorkScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54E5E571AECC1B0001C64E2 /* PastWorkScroll.swift */; };
 		C54E5E5D1AECC1B0001C64E2 /* PastWorkScroll.xib in Resources */ = {isa = PBXBuildFile; fileRef = C54E5E581AECC1B0001C64E2 /* PastWorkScroll.xib */; };
+		C54E5E5F1AECC2B5001C64E2 /* PocketTransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54E5E5E1AECC2B5001C64E2 /* PocketTransitionManager.swift */; };
+		C54E5E611AECC2BA001C64E2 /* OpeningTransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54E5E601AECC2BA001C64E2 /* OpeningTransitionManager.swift */; };
+		C54E5E631AECC2D5001C64E2 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54E5E621AECC2D5001C64E2 /* Utilities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +111,9 @@
 		C54E5E561AECC1B0001C64E2 /* PassCard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PassCard.xib; path = View/PassCard.xib; sourceTree = "<group>"; };
 		C54E5E571AECC1B0001C64E2 /* PastWorkScroll.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PastWorkScroll.swift; path = View/PastWorkScroll.swift; sourceTree = "<group>"; };
 		C54E5E581AECC1B0001C64E2 /* PastWorkScroll.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PastWorkScroll.xib; path = View/PastWorkScroll.xib; sourceTree = "<group>"; };
+		C54E5E5E1AECC2B5001C64E2 /* PocketTransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PocketTransitionManager.swift; path = Utilities/PocketTransitionManager.swift; sourceTree = "<group>"; };
+		C54E5E601AECC2BA001C64E2 /* OpeningTransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OpeningTransitionManager.swift; path = Utilities/OpeningTransitionManager.swift; sourceTree = "<group>"; };
+		C54E5E621AECC2D5001C64E2 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utilities.swift; path = Utilities/Utilities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +210,9 @@
 				C54E5E481AECC198001C64E2 /* CabinetDelegate.swift */,
 				C54E5E461AECC190001C64E2 /* PastWorkDelegate.swift */,
 				C511407A1ADDFFA100D76B7E /* APIs */,
+				C54E5E601AECC2BA001C64E2 /* OpeningTransitionManager.swift */,
+				C54E5E5E1AECC2B5001C64E2 /* PocketTransitionManager.swift */,
+				C54E5E621AECC2D5001C64E2 /* Utilities.swift */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -352,6 +361,7 @@
 				TargetAttributes = {
 					C51140441ADDC6AC00D76B7E = {
 						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = 8ALTMS5K2E;
 					};
 					C51140591ADDC6AD00D76B7E = {
 						CreatedOnToolsVersion = 6.3;
@@ -415,11 +425,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C54E5E491AECC198001C64E2 /* CabinetDelegate.swift in Sources */,
+				C54E5E611AECC2BA001C64E2 /* OpeningTransitionManager.swift in Sources */,
 				C54E5E5C1AECC1B0001C64E2 /* PastWorkScroll.swift in Sources */,
 				C54E5E1B1AECC075001C64E2 /* CardObject.swift in Sources */,
 				C54E5E361AECC14A001C64E2 /* AnimatedFrame.swift in Sources */,
 				C54E5E3B1AECC14A001C64E2 /* UIImageExtension.swift in Sources */,
 				C54E5E521AECC1A4001C64E2 /* TimedTestViewController.swift in Sources */,
+				C54E5E5F1AECC2B5001C64E2 /* PocketTransitionManager.swift in Sources */,
 				C54E5E381AECC14A001C64E2 /* Curry.swift in Sources */,
 				C54E5E531AECC1A4001C64E2 /* ViewController.swift in Sources */,
 				C54E5E341AECC14A001C64E2 /* Animatable.swift in Sources */,
@@ -427,6 +439,7 @@
 				C54E5E5A1AECC1B0001C64E2 /* PassCard.swift in Sources */,
 				C54E5E501AECC1A4001C64E2 /* GameViewController.swift in Sources */,
 				C54E5E281AECC12F001C64E2 /* Operators.swift in Sources */,
+				C54E5E631AECC2D5001C64E2 /* Utilities.swift in Sources */,
 				C54E5E351AECC14A001C64E2 /* AnimatableImageView.swift in Sources */,
 				C54E5E371AECC14A001C64E2 /* Animator.swift in Sources */,
 				C54E5E291AECC12F001C64E2 /* Optional.swift in Sources */,
@@ -557,16 +570,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Tillson",
-					Galloway,
-					"$(PROJECT_DIR)/Tillson",
-					Galloway,
+					"$(PROJECT_DIR)/Tillson\\ Galloway",
 				);
 				INFOPLIST_FILE = "Tillson Galloway/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "./**";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Tillson Galloway/Tillson Galloway-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -578,16 +590,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Tillson",
-					Galloway,
-					"$(PROJECT_DIR)/Tillson",
-					Galloway,
+					"$(PROJECT_DIR)/Tillson\\ Galloway",
 				);
 				INFOPLIST_FILE = "Tillson Galloway/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "./**";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Tillson Galloway/Tillson Galloway-Bridging-Header.h";
 			};
