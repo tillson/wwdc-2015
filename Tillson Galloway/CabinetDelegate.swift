@@ -7,9 +7,11 @@
 //
 
 import UIKit
+import MapKit
 
 protocol CabinetDelegate {
     
     func moreInfoButtonPressed(card: CardObject)
+    func openMapForRegion(region: MKCoordinateRegion)
     
 }

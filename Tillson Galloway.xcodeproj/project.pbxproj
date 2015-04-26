@@ -22,7 +22,11 @@
 		C51140861ADE184800D76B7E /* PassCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51140851ADE184800D76B7E /* PassCard.swift */; };
 		C57173751AE1BAD5003BC1CE /* PastWorkScroll.xib in Resources */ = {isa = PBXBuildFile; fileRef = C57173741AE1BAD5003BC1CE /* PastWorkScroll.xib */; };
 		C57173771AE1C582003BC1CE /* PastWorkScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57173761AE1C582003BC1CE /* PastWorkScroll.swift */; };
-		C59034951ADEF16E00EA0A59 /* font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C59034941ADEF16E00EA0A59 /* font.ttf */; };
+		C58135C21AEC1C7400065633 /* timeline.json in Resources */ = {isa = PBXBuildFile; fileRef = C58135C11AEC1C7400065633 /* timeline.json */; };
+		C58135C61AEC302200065633 /* bio.txt in Resources */ = {isa = PBXBuildFile; fileRef = C58135C51AEC302200065633 /* bio.txt */; };
+		C58135C81AEC3F9900065633 /* skills.txt in Resources */ = {isa = PBXBuildFile; fileRef = C58135C71AEC3F9900065633 /* skills.txt */; };
+		C58135CA1AEC3FAD00065633 /* game.txt in Resources */ = {isa = PBXBuildFile; fileRef = C58135C91AEC3FAD00065633 /* game.txt */; };
+		C58135CC1AEC406D00065633 /* cheatmode.png in Resources */ = {isa = PBXBuildFile; fileRef = C58135CB1AEC406D00065633 /* cheatmode.png */; };
 		C5CFBA181AE4AE1800F131C5 /* Animatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CFBA101AE4AE1800F131C5 /* Animatable.swift */; };
 		C5CFBA191AE4AE1800F131C5 /* AnimatableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CFBA111AE4AE1800F131C5 /* AnimatableImageView.swift */; };
 		C5CFBA1A1AE4AE1800F131C5 /* AnimatedFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CFBA121AE4AE1800F131C5 /* AnimatedFrame.swift */; };
@@ -73,7 +77,11 @@
 		C51140851ADE184800D76B7E /* PassCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassCard.swift; sourceTree = "<group>"; };
 		C57173741AE1BAD5003BC1CE /* PastWorkScroll.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PastWorkScroll.xib; sourceTree = "<group>"; };
 		C57173761AE1C582003BC1CE /* PastWorkScroll.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PastWorkScroll.swift; sourceTree = "<group>"; };
-		C59034941ADEF16E00EA0A59 /* font.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = font.ttf; sourceTree = "<group>"; };
+		C58135C11AEC1C7400065633 /* timeline.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = timeline.json; sourceTree = "<group>"; };
+		C58135C51AEC302200065633 /* bio.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bio.txt; sourceTree = "<group>"; };
+		C58135C71AEC3F9900065633 /* skills.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = skills.txt; sourceTree = "<group>"; };
+		C58135C91AEC3FAD00065633 /* game.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = game.txt; sourceTree = "<group>"; };
+		C58135CB1AEC406D00065633 /* cheatmode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cheatmode.png; sourceTree = "<group>"; };
 		C5CFBA101AE4AE1800F131C5 /* Animatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animatable.swift; sourceTree = "<group>"; };
 		C5CFBA111AE4AE1800F131C5 /* AnimatableImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatableImageView.swift; sourceTree = "<group>"; };
 		C5CFBA121AE4AE1800F131C5 /* AnimatedFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedFrame.swift; sourceTree = "<group>"; };
@@ -238,9 +246,13 @@
 		C51140821ADE156600D76B7E /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				C59034941ADEF16E00EA0A59 /* font.ttf */,
 				C51140511ADDC6AD00D76B7E /* Images.xcassets */,
 				C5F1CACE1AE4A273000165CA /* signedintech.gif */,
+				C58135CB1AEC406D00065633 /* cheatmode.png */,
+				C58135C11AEC1C7400065633 /* timeline.json */,
+				C58135C51AEC302200065633 /* bio.txt */,
+				C58135C71AEC3F9900065633 /* skills.txt */,
+				C58135C91AEC3FAD00065633 /* game.txt */,
 			);
 			name = Assets;
 			sourceTree = "<group>";
@@ -352,11 +364,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C59034951ADEF16E00EA0A59 /* font.ttf in Resources */,
 				C511406D1ADDC74500D76B7E /* Main.storyboard in Resources */,
 				C51140551ADDC6AD00D76B7E /* LaunchScreen.xib in Resources */,
 				C57173751AE1BAD5003BC1CE /* PastWorkScroll.xib in Resources */,
+				C58135C21AEC1C7400065633 /* timeline.json in Resources */,
+				C58135CA1AEC3FAD00065633 /* game.txt in Resources */,
 				C51140811ADE0C4100D76B7E /* PassCard.xib in Resources */,
+				C58135C81AEC3F9900065633 /* skills.txt in Resources */,
+				C58135CC1AEC406D00065633 /* cheatmode.png in Resources */,
+				C58135C61AEC302200065633 /* bio.txt in Resources */,
 				C51140521ADDC6AD00D76B7E /* Images.xcassets in Resources */,
 				C5F1CACF1AE4A273000165CA /* signedintech.gif in Resources */,
 			);

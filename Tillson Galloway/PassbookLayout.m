@@ -226,9 +226,11 @@ CGRect frameForUnselectedPass(NSIndexPath *indexPath, NSIndexPath *indexPathSele
 {
     CGRect f;
     
+    m.collapsed.size.height = 110.0;
+    
     f.size        = m.collapsed.size;
     f.origin.x    = (b.size.width - m.normal.size.width) / 2.0;
-    f.origin.y    = b.origin.y + b.size.height - m.bottomStackedTotalHeight + m.bottomStackedHeight*(indexPath.item - indexPathSelected.item);
+    f.origin.y    = b.origin.y + b.size.height - m.bottomStackedTotalHeight + m.bottomStackedHeight*(indexPath.item - indexPathSelected.item) - 80;
     
     return f;
 }

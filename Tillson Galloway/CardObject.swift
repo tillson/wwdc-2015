@@ -13,12 +13,17 @@ class CardObject {
     let title: String
     let body: String
     let imageName: String
+    
+    var attributedBody: NSAttributedString?
     var moreInfoViewController: UIViewController.Type?
 
-    init(title: String, body: String, imageName: String) {
+    init(title: String, body: String, imageName: String, attributedBody: NSAttributedString? = nil) {
         self.title = title
         self.body = body
         self.imageName = imageName
+        if let attributed = attributedBody {
+            self.attributedBody = attributedBody
+        }
     }
     
     

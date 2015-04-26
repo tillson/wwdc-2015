@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MapKit
 
 class PassCard: UICollectionViewCell {
 
@@ -38,6 +39,8 @@ class PassCard: UICollectionViewCell {
         cardBackground.layer.shadowOpacity = 0.6
         cardBackground.layer.shadowRadius = 3.0
         cardBackground.clipsToBounds = false
+        
+        cardBody.delegate = self
     }
     
     @IBAction func buttonPressed(sender: AnyObject) {
@@ -50,4 +53,21 @@ class PassCard: UICollectionViewCell {
             self.seeMoreButton.enabled = true
         }
     }
+}
+
+extension PassCard: UITextViewDelegate {
+    
+    func textView(textView: UITextView, shouldInteractWithURL URL: NSURL, inRange characterRange: NSRange) -> Bool {
+        let string = (URL.absoluteString! as NSString).substringFromIndex(7) as String
+        
+        if string == "PorterGaudSchool" {
+            let region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 32.7740403, longitude: -79.9644841), span: MKCoordinateSpan(latitudeDelta: 0.007, longitudeDelta: 0.007)) // james bond
+            delegate?.openMapForRegion(region)
+        } else if string == "TheCollegeOfCharleston" {
+            let region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 32.7740403, longitude: -79.9644841), span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
+            delegate?.openMapForRegion(region)
+        }
+        return false
+    }
+    
 }
