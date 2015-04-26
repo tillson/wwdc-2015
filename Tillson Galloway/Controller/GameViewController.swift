@@ -67,7 +67,7 @@ class GameViewController: UIViewController {
         pregameViews.append(subTitleLabel)
         
         sceneView.backgroundColor = UIColor(red: 133.0 / 255.0, green: 197.0 / 255.0, blue: 207.0 / 255.0, alpha: 1.0)
-        sceneView.showsStatistics = true
+        sceneView.showsStatistics = false
         
         sceneView.scene = scene
         
@@ -97,7 +97,7 @@ class GameViewController: UIViewController {
         characterGeom.firstMaterial?.diffuse.contents = UIImage(named: "me")
         
         character = SCNNode(geometry: characterGeom)
-        character.position = SCNVector3(x: 0, y: 0, z: -15)
+        character.position = SCNVector3(x: 0, y: 0, z: -56)
         character.physicsBody = SCNPhysicsBody(type: SCNPhysicsBodyType.Dynamic, shape: SCNPhysicsShape(node: character, options: nil))
         character.physicsBody?.mass = GameCheatMode ? 0.0 : 1.0
         character.physicsBody?.rollingFriction = 1.0
@@ -122,10 +122,13 @@ class GameViewController: UIViewController {
         
         // TODO: Take this off the main queue
         motionManager.startDeviceMotionUpdatesUsingReferenceFrame(CMAttitudeReferenceFrame.XArbitraryCorrectedZVertical, toQueue: NSOperationQueue.mainQueue(), withHandler: {(motion, error) -> Void in
-            let value = self.offset + motion.attitude.roll * 4
-            
+            let value = motion.attitude.roll * 4
+        
             // Snap into place
-            if (abs(value) > 0.1 && (abs(value) < 1.70 || abs(value) > 1.90)) {
+            if abs(value) > 2 {
+                return
+            }
+            if (abs(value) > 0.1 && (abs(value) < 1.60 || abs(value) > 2.0)) {
                 self.mainNode.eulerAngles = SCNVector3(x: 0, y: Float(value), z: 0)
             } else {
                 self.mainNode.eulerAngles = SCNVector3(x: 0, y: abs(value) < 0.1 ? 0 : 1.80*(value < 0 ? -1 : 1), z: 0)

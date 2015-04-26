@@ -16,6 +16,8 @@ class PastWorkScroll: UIView {
 
     @IBOutlet var signedInTechImageView: AnimatableImageView!
     
+    @IBOutlet var commitNumbers: UILabel!
+    
     var delegate: PastWorkDelegate?
     
     override func awakeFromNib() {
@@ -42,6 +44,18 @@ class PastWorkScroll: UIView {
         dispatch_async(dispatch_get_global_queue(priority, 0)) {
             self.signedInTechImageView.animateWithImage(named: "signedintech.gif")
         }
+        
+        
+        let url = NSURL(string: "http://tillsongalloway.com/api/GithubCommits.php")
+        
+        let task = NSURLSession.sharedSession().dataTaskWithURL(url!) {(data, response, error) in
+            let num = NSString(data: data, encoding: NSUTF8StringEncoding)! as String
+            dispatch_async(dispatch_get_main_queue(), {
+                self.commitNumbers.text = num
+            })
+        }
+        
+        task.resume()
         
     }
     

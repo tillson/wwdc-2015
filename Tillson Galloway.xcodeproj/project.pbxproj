@@ -11,42 +11,41 @@
 		C51140521ADDC6AD00D76B7E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C51140511ADDC6AD00D76B7E /* Images.xcassets */; };
 		C51140551ADDC6AD00D76B7E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C51140531ADDC6AD00D76B7E /* LaunchScreen.xib */; };
 		C51140611ADDC6AD00D76B7E /* Tillson_GallowayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51140601ADDC6AD00D76B7E /* Tillson_GallowayTests.swift */; };
-		C511406B1ADDC73200D76B7E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C511406A1ADDC73200D76B7E /* ViewController.swift */; };
-		C511406D1ADDC74500D76B7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C511406C1ADDC74500D76B7E /* Main.storyboard */; };
-		C51140721ADDC7A300D76B7E /* OpeningTransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51140701ADDC7A300D76B7E /* OpeningTransitionManager.swift */; };
-		C51140731ADDC7A300D76B7E /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51140711ADDC7A300D76B7E /* Utilities.swift */; };
-		C51140791ADDFEC000D76B7E /* CardObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51140781ADDFEC000D76B7E /* CardObject.swift */; };
-		C511407F1ADDFFB300D76B7E /* PassbookLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = C511407E1ADDFFB300D76B7E /* PassbookLayout.m */; };
-		C51140811ADE0C4100D76B7E /* PassCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = C51140801ADE0C4100D76B7E /* PassCard.xib */; };
-		C51140841ADE180900D76B7E /* CabinetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51140831ADE180900D76B7E /* CabinetViewController.swift */; };
-		C51140861ADE184800D76B7E /* PassCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51140851ADE184800D76B7E /* PassCard.swift */; };
-		C57173751AE1BAD5003BC1CE /* PastWorkScroll.xib in Resources */ = {isa = PBXBuildFile; fileRef = C57173741AE1BAD5003BC1CE /* PastWorkScroll.xib */; };
-		C57173771AE1C582003BC1CE /* PastWorkScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57173761AE1C582003BC1CE /* PastWorkScroll.swift */; };
-		C58135C21AEC1C7400065633 /* timeline.json in Resources */ = {isa = PBXBuildFile; fileRef = C58135C11AEC1C7400065633 /* timeline.json */; };
-		C58135C61AEC302200065633 /* bio.txt in Resources */ = {isa = PBXBuildFile; fileRef = C58135C51AEC302200065633 /* bio.txt */; };
-		C58135C81AEC3F9900065633 /* skills.txt in Resources */ = {isa = PBXBuildFile; fileRef = C58135C71AEC3F9900065633 /* skills.txt */; };
-		C58135CA1AEC3FAD00065633 /* game.txt in Resources */ = {isa = PBXBuildFile; fileRef = C58135C91AEC3FAD00065633 /* game.txt */; };
-		C58135D41AEC887400065633 /* FBShimmeringLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = C58135D11AEC887400065633 /* FBShimmeringLayer.m */; };
-		C58135D51AEC887400065633 /* FBShimmeringView.m in Sources */ = {isa = PBXBuildFile; fileRef = C58135D31AEC887400065633 /* FBShimmeringView.m */; };
-		C5CFBA181AE4AE1800F131C5 /* Animatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CFBA101AE4AE1800F131C5 /* Animatable.swift */; };
-		C5CFBA191AE4AE1800F131C5 /* AnimatableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CFBA111AE4AE1800F131C5 /* AnimatableImageView.swift */; };
-		C5CFBA1A1AE4AE1800F131C5 /* AnimatedFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CFBA121AE4AE1800F131C5 /* AnimatedFrame.swift */; };
-		C5CFBA1B1AE4AE1800F131C5 /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CFBA131AE4AE1800F131C5 /* Animator.swift */; };
-		C5CFBA1C1AE4AE1800F131C5 /* Curry.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CFBA141AE4AE1800F131C5 /* Curry.swift */; };
-		C5CFBA1D1AE4AE1800F131C5 /* ImageSourceHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CFBA161AE4AE1800F131C5 /* ImageSourceHelpers.swift */; };
-		C5CFBA1E1AE4AE1800F131C5 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CFBA171AE4AE1800F131C5 /* UIImageExtension.swift */; };
-		C5CFBA241AE4AE7B00F131C5 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CFBA211AE4AE7B00F131C5 /* Array.swift */; };
-		C5CFBA251AE4AE7B00F131C5 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CFBA221AE4AE7B00F131C5 /* Operators.swift */; };
-		C5CFBA261AE4AE7B00F131C5 /* Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CFBA231AE4AE7B00F131C5 /* Optional.swift */; };
-		C5D7D06A1AE58FF50082D315 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D7D0691AE58FF50082D315 /* GameViewController.swift */; };
-		C5EDA9F61AECA90E00035EFE /* backbutton.gif in Resources */ = {isa = PBXBuildFile; fileRef = C5EDA9F51AECA90E00035EFE /* backbutton.gif */; };
-		C5EDA9F81AECA91500035EFE /* backbutton-selected.gif in Resources */ = {isa = PBXBuildFile; fileRef = C5EDA9F71AECA91500035EFE /* backbutton-selected.gif */; };
-		C5EDA9FA1AECA99900035EFE /* PocketTransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5EDA9F91AECA99900035EFE /* PocketTransitionManager.swift */; };
-		C5F1CAC71AE47288000165CA /* TimedTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F1CAC61AE47288000165CA /* TimedTestViewController.swift */; };
-		C5F1CAC91AE47D42000165CA /* PastWorkDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F1CAC81AE47D42000165CA /* PastWorkDelegate.swift */; };
-		C5F1CACB1AE47D5D000165CA /* PastWorkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F1CACA1AE47D5D000165CA /* PastWorkViewController.swift */; };
-		C5F1CACD1AE48326000165CA /* CabinetDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F1CACC1AE48326000165CA /* CabinetDelegate.swift */; };
-		C5F1CACF1AE4A273000165CA /* signedintech.gif in Resources */ = {isa = PBXBuildFile; fileRef = C5F1CACE1AE4A273000165CA /* signedintech.gif */; };
+		C54E5E111AECBFF7001C64E2 /* backbutton.gif in Resources */ = {isa = PBXBuildFile; fileRef = C54E5E0A1AECBFF7001C64E2 /* backbutton.gif */; };
+		C54E5E121AECBFF7001C64E2 /* backbutton-selected.gif in Resources */ = {isa = PBXBuildFile; fileRef = C54E5E0B1AECBFF7001C64E2 /* backbutton-selected.gif */; };
+		C54E5E131AECBFF7001C64E2 /* bio.txt in Resources */ = {isa = PBXBuildFile; fileRef = C54E5E0C1AECBFF7001C64E2 /* bio.txt */; };
+		C54E5E141AECBFF7001C64E2 /* game.txt in Resources */ = {isa = PBXBuildFile; fileRef = C54E5E0D1AECBFF7001C64E2 /* game.txt */; };
+		C54E5E151AECBFF7001C64E2 /* signedintech.gif in Resources */ = {isa = PBXBuildFile; fileRef = C54E5E0E1AECBFF7001C64E2 /* signedintech.gif */; };
+		C54E5E161AECBFF7001C64E2 /* skills.txt in Resources */ = {isa = PBXBuildFile; fileRef = C54E5E0F1AECBFF7001C64E2 /* skills.txt */; };
+		C54E5E171AECBFF7001C64E2 /* timeline.json in Resources */ = {isa = PBXBuildFile; fileRef = C54E5E101AECBFF7001C64E2 /* timeline.json */; };
+		C54E5E1B1AECC075001C64E2 /* CardObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54E5E1A1AECC075001C64E2 /* CardObject.swift */; };
+		C54E5E271AECC12F001C64E2 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54E5E231AECC12F001C64E2 /* Array.swift */; };
+		C54E5E281AECC12F001C64E2 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54E5E241AECC12F001C64E2 /* Operators.swift */; };
+		C54E5E291AECC12F001C64E2 /* Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54E5E251AECC12F001C64E2 /* Optional.swift */; };
+		C54E5E2A1AECC12F001C64E2 /* Runes-License in Resources */ = {isa = PBXBuildFile; fileRef = C54E5E261AECC12F001C64E2 /* Runes-License */; };
+		C54E5E341AECC14A001C64E2 /* Animatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54E5E2B1AECC14A001C64E2 /* Animatable.swift */; };
+		C54E5E351AECC14A001C64E2 /* AnimatableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54E5E2C1AECC14A001C64E2 /* AnimatableImageView.swift */; };
+		C54E5E361AECC14A001C64E2 /* AnimatedFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54E5E2D1AECC14A001C64E2 /* AnimatedFrame.swift */; };
+		C54E5E371AECC14A001C64E2 /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54E5E2E1AECC14A001C64E2 /* Animator.swift */; };
+		C54E5E381AECC14A001C64E2 /* Curry.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54E5E2F1AECC14A001C64E2 /* Curry.swift */; };
+		C54E5E391AECC14A001C64E2 /* gify-License in Resources */ = {isa = PBXBuildFile; fileRef = C54E5E311AECC14A001C64E2 /* gify-License */; };
+		C54E5E3A1AECC14A001C64E2 /* ImageSourceHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54E5E321AECC14A001C64E2 /* ImageSourceHelpers.swift */; };
+		C54E5E3B1AECC14A001C64E2 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54E5E331AECC14A001C64E2 /* UIImageExtension.swift */; };
+		C54E5E411AECC167001C64E2 /* FBShimmeringLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = C54E5E3E1AECC167001C64E2 /* FBShimmeringLayer.m */; };
+		C54E5E421AECC167001C64E2 /* FBShimmeringView.m in Sources */ = {isa = PBXBuildFile; fileRef = C54E5E401AECC167001C64E2 /* FBShimmeringView.m */; };
+		C54E5E451AECC183001C64E2 /* PassbookLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = C54E5E441AECC183001C64E2 /* PassbookLayout.m */; };
+		C54E5E471AECC190001C64E2 /* PastWorkDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54E5E461AECC190001C64E2 /* PastWorkDelegate.swift */; };
+		C54E5E491AECC198001C64E2 /* CabinetDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54E5E481AECC198001C64E2 /* CabinetDelegate.swift */; };
+		C54E5E4F1AECC1A4001C64E2 /* CabinetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54E5E4A1AECC1A4001C64E2 /* CabinetViewController.swift */; };
+		C54E5E501AECC1A4001C64E2 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54E5E4B1AECC1A4001C64E2 /* GameViewController.swift */; };
+		C54E5E511AECC1A4001C64E2 /* PastWorkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54E5E4C1AECC1A4001C64E2 /* PastWorkViewController.swift */; };
+		C54E5E521AECC1A4001C64E2 /* TimedTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54E5E4D1AECC1A4001C64E2 /* TimedTestViewController.swift */; };
+		C54E5E531AECC1A4001C64E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54E5E4E1AECC1A4001C64E2 /* ViewController.swift */; };
+		C54E5E591AECC1B0001C64E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C54E5E541AECC1B0001C64E2 /* Main.storyboard */; };
+		C54E5E5A1AECC1B0001C64E2 /* PassCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54E5E551AECC1B0001C64E2 /* PassCard.swift */; };
+		C54E5E5B1AECC1B0001C64E2 /* PassCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = C54E5E561AECC1B0001C64E2 /* PassCard.xib */; };
+		C54E5E5C1AECC1B0001C64E2 /* PastWorkScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54E5E571AECC1B0001C64E2 /* PastWorkScroll.swift */; };
+		C54E5E5D1AECC1B0001C64E2 /* PastWorkScroll.xib in Resources */ = {isa = PBXBuildFile; fileRef = C54E5E581AECC1B0001C64E2 /* PastWorkScroll.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,50 +67,47 @@
 		C511405A1ADDC6AD00D76B7E /* Tillson GallowayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tillson GallowayTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C511405F1ADDC6AD00D76B7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C51140601ADDC6AD00D76B7E /* Tillson_GallowayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tillson_GallowayTests.swift; sourceTree = "<group>"; };
-		C511406A1ADDC73200D76B7E /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C511406C1ADDC74500D76B7E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		C51140701ADDC7A300D76B7E /* OpeningTransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpeningTransitionManager.swift; sourceTree = "<group>"; };
-		C51140711ADDC7A300D76B7E /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
-		C51140781ADDFEC000D76B7E /* CardObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardObject.swift; sourceTree = "<group>"; };
 		C511407C1ADDFFB200D76B7E /* Tillson Galloway-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tillson Galloway-Bridging-Header.h"; sourceTree = "<group>"; };
-		C511407D1ADDFFB300D76B7E /* PassbookLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PassbookLayout.h; sourceTree = "<group>"; };
-		C511407E1ADDFFB300D76B7E /* PassbookLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PassbookLayout.m; sourceTree = "<group>"; };
-		C51140801ADE0C4100D76B7E /* PassCard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PassCard.xib; sourceTree = "<group>"; };
-		C51140831ADE180900D76B7E /* CabinetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CabinetViewController.swift; sourceTree = "<group>"; };
-		C51140851ADE184800D76B7E /* PassCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassCard.swift; sourceTree = "<group>"; };
-		C57173741AE1BAD5003BC1CE /* PastWorkScroll.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PastWorkScroll.xib; sourceTree = "<group>"; };
-		C57173761AE1C582003BC1CE /* PastWorkScroll.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PastWorkScroll.swift; sourceTree = "<group>"; };
-		C58135C11AEC1C7400065633 /* timeline.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = timeline.json; sourceTree = "<group>"; };
-		C58135C51AEC302200065633 /* bio.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bio.txt; sourceTree = "<group>"; };
-		C58135C71AEC3F9900065633 /* skills.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = skills.txt; sourceTree = "<group>"; };
-		C58135C91AEC3FAD00065633 /* game.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = game.txt; sourceTree = "<group>"; };
-		C58135CF1AEC887400065633 /* FBShimmering.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FBShimmering.h; path = APIs/FBShimmering.h; sourceTree = "<group>"; };
-		C58135D01AEC887400065633 /* FBShimmeringLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FBShimmeringLayer.h; path = APIs/FBShimmeringLayer.h; sourceTree = "<group>"; };
-		C58135D11AEC887400065633 /* FBShimmeringLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FBShimmeringLayer.m; path = APIs/FBShimmeringLayer.m; sourceTree = "<group>"; };
-		C58135D21AEC887400065633 /* FBShimmeringView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FBShimmeringView.h; path = APIs/FBShimmeringView.h; sourceTree = "<group>"; };
-		C58135D31AEC887400065633 /* FBShimmeringView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FBShimmeringView.m; path = APIs/FBShimmeringView.m; sourceTree = "<group>"; };
-		C5CFBA101AE4AE1800F131C5 /* Animatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animatable.swift; sourceTree = "<group>"; };
-		C5CFBA111AE4AE1800F131C5 /* AnimatableImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatableImageView.swift; sourceTree = "<group>"; };
-		C5CFBA121AE4AE1800F131C5 /* AnimatedFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedFrame.swift; sourceTree = "<group>"; };
-		C5CFBA131AE4AE1800F131C5 /* Animator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
-		C5CFBA141AE4AE1800F131C5 /* Curry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Curry.swift; sourceTree = "<group>"; };
-		C5CFBA151AE4AE1800F131C5 /* Gifu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gifu.h; sourceTree = "<group>"; };
-		C5CFBA161AE4AE1800F131C5 /* ImageSourceHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageSourceHelpers.swift; sourceTree = "<group>"; };
-		C5CFBA171AE4AE1800F131C5 /* UIImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
-		C5CFBA211AE4AE7B00F131C5 /* Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
-		C5CFBA221AE4AE7B00F131C5 /* Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
-		C5CFBA231AE4AE7B00F131C5 /* Optional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Optional.swift; sourceTree = "<group>"; };
-		C5CFBA271AE4AEA100F131C5 /* Runes-License */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Runes-License"; sourceTree = "<group>"; };
-		C5CFBA281AE4AEBE00F131C5 /* gify-License */ = {isa = PBXFileReference; lastKnownFileType = text; path = "gify-License"; sourceTree = "<group>"; };
-		C5D7D0691AE58FF50082D315 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
-		C5EDA9F51AECA90E00035EFE /* backbutton.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = backbutton.gif; sourceTree = "<group>"; };
-		C5EDA9F71AECA91500035EFE /* backbutton-selected.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "backbutton-selected.gif"; sourceTree = "<group>"; };
-		C5EDA9F91AECA99900035EFE /* PocketTransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PocketTransitionManager.swift; sourceTree = "<group>"; };
-		C5F1CAC61AE47288000165CA /* TimedTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimedTestViewController.swift; sourceTree = "<group>"; };
-		C5F1CAC81AE47D42000165CA /* PastWorkDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PastWorkDelegate.swift; sourceTree = "<group>"; };
-		C5F1CACA1AE47D5D000165CA /* PastWorkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PastWorkViewController.swift; sourceTree = "<group>"; };
-		C5F1CACC1AE48326000165CA /* CabinetDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CabinetDelegate.swift; sourceTree = "<group>"; };
-		C5F1CACE1AE4A273000165CA /* signedintech.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = signedintech.gif; sourceTree = "<group>"; };
+		C54E5E0A1AECBFF7001C64E2 /* backbutton.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = backbutton.gif; path = Assets/backbutton.gif; sourceTree = "<group>"; };
+		C54E5E0B1AECBFF7001C64E2 /* backbutton-selected.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "backbutton-selected.gif"; path = "Assets/backbutton-selected.gif"; sourceTree = "<group>"; };
+		C54E5E0C1AECBFF7001C64E2 /* bio.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = bio.txt; path = Assets/bio.txt; sourceTree = "<group>"; };
+		C54E5E0D1AECBFF7001C64E2 /* game.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = game.txt; path = Assets/game.txt; sourceTree = "<group>"; };
+		C54E5E0E1AECBFF7001C64E2 /* signedintech.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = signedintech.gif; path = Assets/signedintech.gif; sourceTree = "<group>"; };
+		C54E5E0F1AECBFF7001C64E2 /* skills.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = skills.txt; path = Assets/skills.txt; sourceTree = "<group>"; };
+		C54E5E101AECBFF7001C64E2 /* timeline.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = timeline.json; path = Assets/timeline.json; sourceTree = "<group>"; };
+		C54E5E1A1AECC075001C64E2 /* CardObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CardObject.swift; path = Model/CardObject.swift; sourceTree = "<group>"; };
+		C54E5E231AECC12F001C64E2 /* Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Array.swift; path = Utilities/Runes/Array.swift; sourceTree = "<group>"; };
+		C54E5E241AECC12F001C64E2 /* Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = Utilities/Runes/Operators.swift; sourceTree = "<group>"; };
+		C54E5E251AECC12F001C64E2 /* Optional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Optional.swift; path = Utilities/Runes/Optional.swift; sourceTree = "<group>"; };
+		C54E5E261AECC12F001C64E2 /* Runes-License */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "Runes-License"; path = "Utilities/Runes/Runes-License"; sourceTree = "<group>"; };
+		C54E5E2B1AECC14A001C64E2 /* Animatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Animatable.swift; path = Utilities/gify/Animatable.swift; sourceTree = "<group>"; };
+		C54E5E2C1AECC14A001C64E2 /* AnimatableImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnimatableImageView.swift; path = Utilities/gify/AnimatableImageView.swift; sourceTree = "<group>"; };
+		C54E5E2D1AECC14A001C64E2 /* AnimatedFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnimatedFrame.swift; path = Utilities/gify/AnimatedFrame.swift; sourceTree = "<group>"; };
+		C54E5E2E1AECC14A001C64E2 /* Animator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Animator.swift; path = Utilities/gify/Animator.swift; sourceTree = "<group>"; };
+		C54E5E2F1AECC14A001C64E2 /* Curry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Curry.swift; path = Utilities/gify/Curry.swift; sourceTree = "<group>"; };
+		C54E5E301AECC14A001C64E2 /* Gifu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Gifu.h; path = Utilities/gify/Gifu.h; sourceTree = "<group>"; };
+		C54E5E311AECC14A001C64E2 /* gify-License */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "gify-License"; path = "Utilities/gify/gify-License"; sourceTree = "<group>"; };
+		C54E5E321AECC14A001C64E2 /* ImageSourceHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageSourceHelpers.swift; path = Utilities/gify/ImageSourceHelpers.swift; sourceTree = "<group>"; };
+		C54E5E331AECC14A001C64E2 /* UIImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIImageExtension.swift; path = Utilities/gify/UIImageExtension.swift; sourceTree = "<group>"; };
+		C54E5E3C1AECC167001C64E2 /* FBShimmering.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FBShimmering.h; path = Utilities/Shimmer/FBShimmering.h; sourceTree = "<group>"; };
+		C54E5E3D1AECC167001C64E2 /* FBShimmeringLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FBShimmeringLayer.h; path = Utilities/Shimmer/FBShimmeringLayer.h; sourceTree = "<group>"; };
+		C54E5E3E1AECC167001C64E2 /* FBShimmeringLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FBShimmeringLayer.m; path = Utilities/Shimmer/FBShimmeringLayer.m; sourceTree = "<group>"; };
+		C54E5E3F1AECC167001C64E2 /* FBShimmeringView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FBShimmeringView.h; path = Utilities/Shimmer/FBShimmeringView.h; sourceTree = "<group>"; };
+		C54E5E401AECC167001C64E2 /* FBShimmeringView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FBShimmeringView.m; path = Utilities/Shimmer/FBShimmeringView.m; sourceTree = "<group>"; };
+		C54E5E431AECC183001C64E2 /* PassbookLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PassbookLayout.h; path = Utilities/Passbook/PassbookLayout.h; sourceTree = "<group>"; };
+		C54E5E441AECC183001C64E2 /* PassbookLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PassbookLayout.m; path = Utilities/Passbook/PassbookLayout.m; sourceTree = "<group>"; };
+		C54E5E461AECC190001C64E2 /* PastWorkDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PastWorkDelegate.swift; path = Utilities/PastWorkDelegate.swift; sourceTree = "<group>"; };
+		C54E5E481AECC198001C64E2 /* CabinetDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CabinetDelegate.swift; path = Utilities/CabinetDelegate.swift; sourceTree = "<group>"; };
+		C54E5E4A1AECC1A4001C64E2 /* CabinetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CabinetViewController.swift; path = Controller/CabinetViewController.swift; sourceTree = "<group>"; };
+		C54E5E4B1AECC1A4001C64E2 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameViewController.swift; path = Controller/GameViewController.swift; sourceTree = "<group>"; };
+		C54E5E4C1AECC1A4001C64E2 /* PastWorkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PastWorkViewController.swift; path = Controller/PastWorkViewController.swift; sourceTree = "<group>"; };
+		C54E5E4D1AECC1A4001C64E2 /* TimedTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TimedTestViewController.swift; path = Controller/TimedTestViewController.swift; sourceTree = "<group>"; };
+		C54E5E4E1AECC1A4001C64E2 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Controller/ViewController.swift; sourceTree = "<group>"; };
+		C54E5E541AECC1B0001C64E2 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = View/Main.storyboard; sourceTree = "<group>"; };
+		C54E5E551AECC1B0001C64E2 /* PassCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PassCard.swift; path = View/PassCard.swift; sourceTree = "<group>"; };
+		C54E5E561AECC1B0001C64E2 /* PassCard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PassCard.xib; path = View/PassCard.xib; sourceTree = "<group>"; };
+		C54E5E571AECC1B0001C64E2 /* PastWorkScroll.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PastWorkScroll.swift; path = View/PastWorkScroll.swift; sourceTree = "<group>"; };
+		C54E5E581AECC1B0001C64E2 /* PastWorkScroll.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PastWorkScroll.xib; path = View/PastWorkScroll.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,7 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				C51140821ADE156600D76B7E /* Assets */,
-				C51140771ADDFB6500D76B7E /* Modal */,
+				C51140771ADDFB6500D76B7E /* Model */,
 				C51140761ADDC80900D76B7E /* View */,
 				C51140741ADDC7E300D76B7E /* Controller */,
 				C51140751ADDC7F700D76B7E /* Utilities */,
@@ -193,11 +189,11 @@
 		C51140741ADDC7E300D76B7E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				C511406A1ADDC73200D76B7E /* ViewController.swift */,
-				C51140831ADE180900D76B7E /* CabinetViewController.swift */,
-				C5F1CACA1AE47D5D000165CA /* PastWorkViewController.swift */,
-				C5F1CAC61AE47288000165CA /* TimedTestViewController.swift */,
-				C5D7D0691AE58FF50082D315 /* GameViewController.swift */,
+				C54E5E4A1AECC1A4001C64E2 /* CabinetViewController.swift */,
+				C54E5E4B1AECC1A4001C64E2 /* GameViewController.swift */,
+				C54E5E4C1AECC1A4001C64E2 /* PastWorkViewController.swift */,
+				C54E5E4D1AECC1A4001C64E2 /* TimedTestViewController.swift */,
+				C54E5E4E1AECC1A4001C64E2 /* ViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -205,12 +201,9 @@
 		C51140751ADDC7F700D76B7E /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				C5F1CAC81AE47D42000165CA /* PastWorkDelegate.swift */,
-				C5F1CACC1AE48326000165CA /* CabinetDelegate.swift */,
+				C54E5E481AECC198001C64E2 /* CabinetDelegate.swift */,
+				C54E5E461AECC190001C64E2 /* PastWorkDelegate.swift */,
 				C511407A1ADDFFA100D76B7E /* APIs */,
-				C51140711ADDC7A300D76B7E /* Utilities.swift */,
-				C51140701ADDC7A300D76B7E /* OpeningTransitionManager.swift */,
-				C5EDA9F91AECA99900035EFE /* PocketTransitionManager.swift */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -218,22 +211,22 @@
 		C51140761ADDC80900D76B7E /* View */ = {
 			isa = PBXGroup;
 			children = (
-				C511406C1ADDC74500D76B7E /* Main.storyboard */,
-				C51140801ADE0C4100D76B7E /* PassCard.xib */,
+				C54E5E541AECC1B0001C64E2 /* Main.storyboard */,
+				C54E5E551AECC1B0001C64E2 /* PassCard.swift */,
+				C54E5E561AECC1B0001C64E2 /* PassCard.xib */,
+				C54E5E571AECC1B0001C64E2 /* PastWorkScroll.swift */,
+				C54E5E581AECC1B0001C64E2 /* PastWorkScroll.xib */,
 				C51140531ADDC6AD00D76B7E /* LaunchScreen.xib */,
-				C57173741AE1BAD5003BC1CE /* PastWorkScroll.xib */,
-				C51140851ADE184800D76B7E /* PassCard.swift */,
-				C57173761AE1C582003BC1CE /* PastWorkScroll.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
 		};
-		C51140771ADDFB6500D76B7E /* Modal */ = {
+		C51140771ADDFB6500D76B7E /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				C51140781ADDFEC000D76B7E /* CardObject.swift */,
+				C54E5E1A1AECC075001C64E2 /* CardObject.swift */,
 			);
-			name = Modal;
+			name = Model;
 			sourceTree = "<group>";
 		};
 		C511407A1ADDFFA100D76B7E /* APIs */ = {
@@ -250,8 +243,8 @@
 		C511407B1ADDFFA700D76B7E /* Passbook */ = {
 			isa = PBXGroup;
 			children = (
-				C511407D1ADDFFB300D76B7E /* PassbookLayout.h */,
-				C511407E1ADDFFB300D76B7E /* PassbookLayout.m */,
+				C54E5E431AECC183001C64E2 /* PassbookLayout.h */,
+				C54E5E441AECC183001C64E2 /* PassbookLayout.m */,
 			);
 			name = Passbook;
 			sourceTree = "<group>";
@@ -260,13 +253,13 @@
 			isa = PBXGroup;
 			children = (
 				C51140511ADDC6AD00D76B7E /* Images.xcassets */,
-				C5F1CACE1AE4A273000165CA /* signedintech.gif */,
-				C5EDA9F51AECA90E00035EFE /* backbutton.gif */,
-				C5EDA9F71AECA91500035EFE /* backbutton-selected.gif */,
-				C58135C11AEC1C7400065633 /* timeline.json */,
-				C58135C51AEC302200065633 /* bio.txt */,
-				C58135C71AEC3F9900065633 /* skills.txt */,
-				C58135C91AEC3FAD00065633 /* game.txt */,
+				C54E5E0A1AECBFF7001C64E2 /* backbutton.gif */,
+				C54E5E0B1AECBFF7001C64E2 /* backbutton-selected.gif */,
+				C54E5E0C1AECBFF7001C64E2 /* bio.txt */,
+				C54E5E0D1AECBFF7001C64E2 /* game.txt */,
+				C54E5E0E1AECBFF7001C64E2 /* signedintech.gif */,
+				C54E5E0F1AECBFF7001C64E2 /* skills.txt */,
+				C54E5E101AECBFF7001C64E2 /* timeline.json */,
 			);
 			name = Assets;
 			sourceTree = "<group>";
@@ -274,11 +267,11 @@
 		C58135CE1AEC885100065633 /* Shimmer */ = {
 			isa = PBXGroup;
 			children = (
-				C58135CF1AEC887400065633 /* FBShimmering.h */,
-				C58135D01AEC887400065633 /* FBShimmeringLayer.h */,
-				C58135D11AEC887400065633 /* FBShimmeringLayer.m */,
-				C58135D21AEC887400065633 /* FBShimmeringView.h */,
-				C58135D31AEC887400065633 /* FBShimmeringView.m */,
+				C54E5E3C1AECC167001C64E2 /* FBShimmering.h */,
+				C54E5E3D1AECC167001C64E2 /* FBShimmeringLayer.h */,
+				C54E5E3E1AECC167001C64E2 /* FBShimmeringLayer.m */,
+				C54E5E3F1AECC167001C64E2 /* FBShimmeringView.h */,
+				C54E5E401AECC167001C64E2 /* FBShimmeringView.m */,
 			);
 			name = Shimmer;
 			sourceTree = "<group>";
@@ -286,15 +279,15 @@
 		C5CFBA1F1AE4AE1E00F131C5 /* gify */ = {
 			isa = PBXGroup;
 			children = (
-				C5CFBA281AE4AEBE00F131C5 /* gify-License */,
-				C5CFBA101AE4AE1800F131C5 /* Animatable.swift */,
-				C5CFBA111AE4AE1800F131C5 /* AnimatableImageView.swift */,
-				C5CFBA121AE4AE1800F131C5 /* AnimatedFrame.swift */,
-				C5CFBA131AE4AE1800F131C5 /* Animator.swift */,
-				C5CFBA141AE4AE1800F131C5 /* Curry.swift */,
-				C5CFBA151AE4AE1800F131C5 /* Gifu.h */,
-				C5CFBA161AE4AE1800F131C5 /* ImageSourceHelpers.swift */,
-				C5CFBA171AE4AE1800F131C5 /* UIImageExtension.swift */,
+				C54E5E2B1AECC14A001C64E2 /* Animatable.swift */,
+				C54E5E2C1AECC14A001C64E2 /* AnimatableImageView.swift */,
+				C54E5E2D1AECC14A001C64E2 /* AnimatedFrame.swift */,
+				C54E5E2E1AECC14A001C64E2 /* Animator.swift */,
+				C54E5E2F1AECC14A001C64E2 /* Curry.swift */,
+				C54E5E301AECC14A001C64E2 /* Gifu.h */,
+				C54E5E311AECC14A001C64E2 /* gify-License */,
+				C54E5E321AECC14A001C64E2 /* ImageSourceHelpers.swift */,
+				C54E5E331AECC14A001C64E2 /* UIImageExtension.swift */,
 			);
 			name = gify;
 			sourceTree = "<group>";
@@ -302,10 +295,10 @@
 		C5CFBA201AE4AE6200F131C5 /* Runes */ = {
 			isa = PBXGroup;
 			children = (
-				C5CFBA271AE4AEA100F131C5 /* Runes-License */,
-				C5CFBA211AE4AE7B00F131C5 /* Array.swift */,
-				C5CFBA221AE4AE7B00F131C5 /* Operators.swift */,
-				C5CFBA231AE4AE7B00F131C5 /* Optional.swift */,
+				C54E5E231AECC12F001C64E2 /* Array.swift */,
+				C54E5E241AECC12F001C64E2 /* Operators.swift */,
+				C54E5E251AECC12F001C64E2 /* Optional.swift */,
+				C54E5E261AECC12F001C64E2 /* Runes-License */,
 			);
 			name = Runes;
 			sourceTree = "<group>";
@@ -390,18 +383,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C511406D1ADDC74500D76B7E /* Main.storyboard in Resources */,
+				C54E5E171AECBFF7001C64E2 /* timeline.json in Resources */,
+				C54E5E151AECBFF7001C64E2 /* signedintech.gif in Resources */,
 				C51140551ADDC6AD00D76B7E /* LaunchScreen.xib in Resources */,
-				C5EDA9F81AECA91500035EFE /* backbutton-selected.gif in Resources */,
-				C57173751AE1BAD5003BC1CE /* PastWorkScroll.xib in Resources */,
-				C58135C21AEC1C7400065633 /* timeline.json in Resources */,
-				C58135CA1AEC3FAD00065633 /* game.txt in Resources */,
-				C51140811ADE0C4100D76B7E /* PassCard.xib in Resources */,
-				C58135C81AEC3F9900065633 /* skills.txt in Resources */,
-				C58135C61AEC302200065633 /* bio.txt in Resources */,
-				C5EDA9F61AECA90E00035EFE /* backbutton.gif in Resources */,
+				C54E5E5D1AECC1B0001C64E2 /* PastWorkScroll.xib in Resources */,
+				C54E5E591AECC1B0001C64E2 /* Main.storyboard in Resources */,
+				C54E5E121AECBFF7001C64E2 /* backbutton-selected.gif in Resources */,
 				C51140521ADDC6AD00D76B7E /* Images.xcassets in Resources */,
-				C5F1CACF1AE4A273000165CA /* signedintech.gif in Resources */,
+				C54E5E2A1AECC12F001C64E2 /* Runes-License in Resources */,
+				C54E5E161AECBFF7001C64E2 /* skills.txt in Resources */,
+				C54E5E5B1AECC1B0001C64E2 /* PassCard.xib in Resources */,
+				C54E5E111AECBFF7001C64E2 /* backbutton.gif in Resources */,
+				C54E5E141AECBFF7001C64E2 /* game.txt in Resources */,
+				C54E5E131AECBFF7001C64E2 /* bio.txt in Resources */,
+				C54E5E391AECC14A001C64E2 /* gify-License in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,33 +414,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5F1CAC71AE47288000165CA /* TimedTestViewController.swift in Sources */,
-				C5CFBA191AE4AE1800F131C5 /* AnimatableImageView.swift in Sources */,
-				C5CFBA261AE4AE7B00F131C5 /* Optional.swift in Sources */,
-				C51140791ADDFEC000D76B7E /* CardObject.swift in Sources */,
-				C5EDA9FA1AECA99900035EFE /* PocketTransitionManager.swift in Sources */,
-				C5D7D06A1AE58FF50082D315 /* GameViewController.swift in Sources */,
-				C5CFBA1E1AE4AE1800F131C5 /* UIImageExtension.swift in Sources */,
-				C511407F1ADDFFB300D76B7E /* PassbookLayout.m in Sources */,
-				C58135D51AEC887400065633 /* FBShimmeringView.m in Sources */,
-				C57173771AE1C582003BC1CE /* PastWorkScroll.swift in Sources */,
-				C5F1CACD1AE48326000165CA /* CabinetDelegate.swift in Sources */,
-				C51140721ADDC7A300D76B7E /* OpeningTransitionManager.swift in Sources */,
-				C5CFBA1C1AE4AE1800F131C5 /* Curry.swift in Sources */,
-				C5CFBA241AE4AE7B00F131C5 /* Array.swift in Sources */,
-				C5F1CACB1AE47D5D000165CA /* PastWorkViewController.swift in Sources */,
-				C5F1CAC91AE47D42000165CA /* PastWorkDelegate.swift in Sources */,
-				C51140841ADE180900D76B7E /* CabinetViewController.swift in Sources */,
-				C51140861ADE184800D76B7E /* PassCard.swift in Sources */,
-				C511406B1ADDC73200D76B7E /* ViewController.swift in Sources */,
-				C58135D41AEC887400065633 /* FBShimmeringLayer.m in Sources */,
-				C5CFBA1A1AE4AE1800F131C5 /* AnimatedFrame.swift in Sources */,
-				C5CFBA1D1AE4AE1800F131C5 /* ImageSourceHelpers.swift in Sources */,
-				C5CFBA251AE4AE7B00F131C5 /* Operators.swift in Sources */,
-				C5CFBA1B1AE4AE1800F131C5 /* Animator.swift in Sources */,
-				C5CFBA181AE4AE1800F131C5 /* Animatable.swift in Sources */,
+				C54E5E491AECC198001C64E2 /* CabinetDelegate.swift in Sources */,
+				C54E5E5C1AECC1B0001C64E2 /* PastWorkScroll.swift in Sources */,
+				C54E5E1B1AECC075001C64E2 /* CardObject.swift in Sources */,
+				C54E5E361AECC14A001C64E2 /* AnimatedFrame.swift in Sources */,
+				C54E5E3B1AECC14A001C64E2 /* UIImageExtension.swift in Sources */,
+				C54E5E521AECC1A4001C64E2 /* TimedTestViewController.swift in Sources */,
+				C54E5E381AECC14A001C64E2 /* Curry.swift in Sources */,
+				C54E5E531AECC1A4001C64E2 /* ViewController.swift in Sources */,
+				C54E5E341AECC14A001C64E2 /* Animatable.swift in Sources */,
+				C54E5E511AECC1A4001C64E2 /* PastWorkViewController.swift in Sources */,
+				C54E5E5A1AECC1B0001C64E2 /* PassCard.swift in Sources */,
+				C54E5E501AECC1A4001C64E2 /* GameViewController.swift in Sources */,
+				C54E5E281AECC12F001C64E2 /* Operators.swift in Sources */,
+				C54E5E351AECC14A001C64E2 /* AnimatableImageView.swift in Sources */,
+				C54E5E371AECC14A001C64E2 /* Animator.swift in Sources */,
+				C54E5E291AECC12F001C64E2 /* Optional.swift in Sources */,
+				C54E5E411AECC167001C64E2 /* FBShimmeringLayer.m in Sources */,
+				C54E5E421AECC167001C64E2 /* FBShimmeringView.m in Sources */,
+				C54E5E471AECC190001C64E2 /* PastWorkDelegate.swift in Sources */,
+				C54E5E4F1AECC1A4001C64E2 /* CabinetViewController.swift in Sources */,
+				C54E5E451AECC183001C64E2 /* PassbookLayout.m in Sources */,
+				C54E5E3A1AECC14A001C64E2 /* ImageSourceHelpers.swift in Sources */,
+				C54E5E271AECC12F001C64E2 /* Array.swift in Sources */,
 				C511404B1ADDC6AD00D76B7E /* AppDelegate.swift in Sources */,
-				C51140731ADDC7A300D76B7E /* Utilities.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
