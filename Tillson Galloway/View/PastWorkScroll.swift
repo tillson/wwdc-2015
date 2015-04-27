@@ -40,10 +40,10 @@ class PastWorkScroll: UIView {
         openSourceImage.addGestureRecognizer(gitTapGesture)
 
         
-        let priority = DISPATCH_QUEUE_PRIORITY_DEFAULT
-        dispatch_async(dispatch_get_global_queue(priority, 0)) {
-            self.signedInTechImageView.animateWithImage(named: "signedintech.gif")
-        }
+//        let priority = DISPATCH_QUEUE_PRIORITY_DEFAULT
+//        dispatch_async(dispatch_get_global_queue(priority, 0)) {
+//            self.signedInTechImageView.animateWithImage(named: "signedintech.gif")
+//        }
         
         
         let url = NSURL(string: "http://tillsongalloway.com/api/GithubCommits.php")

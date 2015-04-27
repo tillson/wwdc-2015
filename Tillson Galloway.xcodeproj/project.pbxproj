@@ -15,7 +15,6 @@
 		C54E5E121AECBFF7001C64E2 /* backbutton-selected.gif in Resources */ = {isa = PBXBuildFile; fileRef = C54E5E0B1AECBFF7001C64E2 /* backbutton-selected.gif */; };
 		C54E5E131AECBFF7001C64E2 /* bio.txt in Resources */ = {isa = PBXBuildFile; fileRef = C54E5E0C1AECBFF7001C64E2 /* bio.txt */; };
 		C54E5E141AECBFF7001C64E2 /* game.txt in Resources */ = {isa = PBXBuildFile; fileRef = C54E5E0D1AECBFF7001C64E2 /* game.txt */; };
-		C54E5E151AECBFF7001C64E2 /* signedintech.gif in Resources */ = {isa = PBXBuildFile; fileRef = C54E5E0E1AECBFF7001C64E2 /* signedintech.gif */; };
 		C54E5E161AECBFF7001C64E2 /* skills.txt in Resources */ = {isa = PBXBuildFile; fileRef = C54E5E0F1AECBFF7001C64E2 /* skills.txt */; };
 		C54E5E171AECBFF7001C64E2 /* timeline.json in Resources */ = {isa = PBXBuildFile; fileRef = C54E5E101AECBFF7001C64E2 /* timeline.json */; };
 		C54E5E1B1AECC075001C64E2 /* CardObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54E5E1A1AECC075001C64E2 /* CardObject.swift */; };
@@ -75,7 +74,6 @@
 		C54E5E0B1AECBFF7001C64E2 /* backbutton-selected.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "backbutton-selected.gif"; path = "Assets/backbutton-selected.gif"; sourceTree = "<group>"; };
 		C54E5E0C1AECBFF7001C64E2 /* bio.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = bio.txt; path = Assets/bio.txt; sourceTree = "<group>"; };
 		C54E5E0D1AECBFF7001C64E2 /* game.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = game.txt; path = Assets/game.txt; sourceTree = "<group>"; };
-		C54E5E0E1AECBFF7001C64E2 /* signedintech.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = signedintech.gif; path = Assets/signedintech.gif; sourceTree = "<group>"; };
 		C54E5E0F1AECBFF7001C64E2 /* skills.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = skills.txt; path = Assets/skills.txt; sourceTree = "<group>"; };
 		C54E5E101AECBFF7001C64E2 /* timeline.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = timeline.json; path = Assets/timeline.json; sourceTree = "<group>"; };
 		C54E5E1A1AECC075001C64E2 /* CardObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CardObject.swift; path = Model/CardObject.swift; sourceTree = "<group>"; };
@@ -266,7 +264,6 @@
 				C54E5E0B1AECBFF7001C64E2 /* backbutton-selected.gif */,
 				C54E5E0C1AECBFF7001C64E2 /* bio.txt */,
 				C54E5E0D1AECBFF7001C64E2 /* game.txt */,
-				C54E5E0E1AECBFF7001C64E2 /* signedintech.gif */,
 				C54E5E0F1AECBFF7001C64E2 /* skills.txt */,
 				C54E5E101AECBFF7001C64E2 /* timeline.json */,
 			);
@@ -394,7 +391,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C54E5E171AECBFF7001C64E2 /* timeline.json in Resources */,
-				C54E5E151AECBFF7001C64E2 /* signedintech.gif in Resources */,
 				C51140551ADDC6AD00D76B7E /* LaunchScreen.xib in Resources */,
 				C54E5E5D1AECC1B0001C64E2 /* PastWorkScroll.xib in Resources */,
 				C54E5E591AECC1B0001C64E2 /* Main.storyboard in Resources */,
