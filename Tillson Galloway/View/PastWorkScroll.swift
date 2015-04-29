@@ -46,7 +46,7 @@ class PastWorkScroll: UIView {
 //        }
         
         
-        let url = NSURL(string: "http://tillsongalloway.com/api/GithubCommits.php")
+        let url = NSURL(string: "http://tillsongalloway.com/api/GithubCommits.php?git")
         
         let task = NSURLSession.sharedSession().dataTaskWithURL(url!) {(data, response, error) in
             let num = NSString(data: data, encoding: NSUTF8StringEncoding)! as String
