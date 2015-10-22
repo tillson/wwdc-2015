@@ -111,11 +111,15 @@ class GameViewController: UIViewController {
         
         let path = NSBundle.mainBundle().pathForResource("timeline", ofType: "json")!
         let jsonData = NSData(contentsOfFile: path)
-        var jsonResult = NSJSONSerialization.JSONObjectWithData(jsonData!, options: NSJSONReadingOptions.MutableContainers, error: nil) as! NSMutableArray
-        for entry in jsonResult {
-            timelineArray.append(entry as! String)
+        do {
+            let jsonResult = try NSJSONSerialization.JSONObjectWithData(jsonData!, options: NSJSONReadingOptions.MutableContainers) as! NSMutableArray
+            for entry in jsonResult {
+                timelineArray.append(entry as! String)
+            }
+            
+        } catch {
+            print("err")
         }
-        
         setupPipes()
         setupScenery()
         
@@ -123,7 +127,7 @@ class GameViewController: UIViewController {
         
         // TODO: Take this off the main queue
         motionManager.startDeviceMotionUpdatesUsingReferenceFrame(CMAttitudeReferenceFrame.XArbitraryCorrectedZVertical, toQueue: NSOperationQueue.mainQueue(), withHandler: {(motion, error) -> Void in
-            let value = motion.attitude.roll * 1.5
+            let value = motion!.attitude.roll * 1.5
         
             // Snap into place
             if abs(value) > 2 {
@@ -143,7 +147,7 @@ class GameViewController: UIViewController {
         if let existingGestureRecognizers = sceneView.gestureRecognizers {
             gestureRecognizers.addObjectsFromArray(existingGestureRecognizers)
         }
-        sceneView.gestureRecognizers = gestureRecognizers as [AnyObject]
+//        sceneView.gestureRecognizers = gestureRecognizers
         
         inProgress = true
     }

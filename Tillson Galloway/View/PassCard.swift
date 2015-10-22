@@ -56,17 +56,17 @@ class PassCard: UICollectionViewCell {
 extension PassCard: UITextViewDelegate {
     
     func textView(textView: UITextView, shouldInteractWithURL URL: NSURL, inRange characterRange: NSRange) -> Bool {
-        let string = (URL.absoluteString! as NSString).substringFromIndex(6) as String
-        
-        if string == "PorterGaudSchool" {
-            let region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 32.7740403, longitude: -79.9644841), span: MKCoordinateSpan(latitudeDelta: 0.007, longitudeDelta: 0.007)) // james bond
-            delegate?.openMapForRegion(region, title: "Porter-Gaud School")
-        } else if string == "TheCollegeofCharleston" {
-            let region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 32.7837209, longitude: -79.9373006), span: MKCoordinateSpan(latitudeDelta: 0.007, longitudeDelta: 0.007))
-            delegate?.openMapForRegion(region, title: "College of Charleston Campus")
-        } else {
-            println(string)
-        }
+//        let string = URL.absoluteString.substringFromIndex(6) as String
+//        
+//        if string == "PorterGaudSchool" {
+//            let region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 32.7740403, longitude: -79.9644841), span: MKCoordinateSpan(latitudeDelta: 0.007, longitudeDelta: 0.007)) // james bond
+//            delegate?.openMapForRegion(region, title: "Porter-Gaud School")
+//        } else if string == "TheCollegeofCharleston" {
+//            let region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 32.7837209, longitude: -79.9373006), span: MKCoordinateSpan(latitudeDelta: 0.007, longitudeDelta: 0.007))
+//            delegate?.openMapForRegion(region, title: "College of Charleston Campus")
+//        } else {
+//            println(string)
+//        }
         return false
     }
     

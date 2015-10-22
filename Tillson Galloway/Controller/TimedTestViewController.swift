@@ -95,7 +95,7 @@ class TimedTestViewController: UIViewController {
     
     func animateNewProblem(newView: UIView) {
         isTransitioning = true
-        UIView.animateWithDuration(1.5, delay: 0.0, usingSpringWithDamping: 0.77, initialSpringVelocity: 0.9, options: nil, animations: {
+        UIView.animateWithDuration(1.5, delay: 0.0, usingSpringWithDamping: 0.77, initialSpringVelocity: 0.9, options: [], animations: {
             newView.frame = CGRect(x: 15, y: 15, width: self.view.frame.width-30, height: self.view.frame.height-30)
             self.currentProblemView.frame = CGRect(x: -self.view.frame.width, y: 15, width: self.view.frame.width-30, height: self.view.frame.height-30)
             }, completion: { animated in
@@ -139,11 +139,11 @@ class TimedTestViewController: UIViewController {
         button.alpha = 0.0
         finishView.addSubview(button)
         
-        UIView.animateWithDuration(0.3, delay: 1.0, options: nil, animations: {
+        UIView.animateWithDuration(0.3, delay: 1.0, options: [], animations: {
             infoLabel.alpha = 1.0
         }, completion: nil)
         
-        UIView.animateWithDuration(0.4, delay: 1.0, options: nil, animations: {
+        UIView.animateWithDuration(0.4, delay: 1.0, options: [], animations: {
             button.alpha = 1.0
         }, completion: nil)
         
@@ -183,7 +183,7 @@ class TimedTestViewController: UIViewController {
     }
     
     func endTest() {
-        UIView.animateWithDuration(1.0, delay: 0.0, options: nil, animations: {
+        UIView.animateWithDuration(1.0, delay: 0.0, options: [], animations: {
             let frame = self.currentProblemView.frame
             self.currentProblemView.frame = CGRect(x: frame.origin.x, y: -frame.height, width: frame.width, height: frame.height)
             }, completion: { animated in
@@ -218,7 +218,7 @@ class AdditionProblem: NSObject {
     }
     
     func answerIsCorrect(check: String) -> Bool {
-        let answerInt = check.toInt()
+        let answerInt = Int(check)
         if let answer = answerInt {
             if answer == getAnswer() {
                 return true;

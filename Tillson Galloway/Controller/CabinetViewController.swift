@@ -41,27 +41,31 @@ class CabinetViewController: UICollectionViewController {
     
     func getBioText() -> NSAttributedString {
         
-        var originalString = Utilities.getFileContents("bio", type: "txt")
-        var attributedString = NSMutableAttributedString(string: originalString)
+        let originalString = Utilities.getFileContents("bio", type: "txt")
+        let attributedString = NSMutableAttributedString(string: originalString)
         
-        var textRange = NSRange(location: 0, length: attributedString.length)
-        let regex = NSRegularExpression(pattern: "\\[(.*?)\\]", options: nil, error: nil)!
-        
-        let matches = regex.matchesInString(originalString, options: NSMatchingOptions.WithoutAnchoringBounds, range: textRange)
-        attributedString.addAttributes([NSForegroundColorAttributeName: UIColor.whiteColor()], range: textRange)
-
-        for match in matches as! [NSTextCheckingResult] {
-            let matchRange = NSRange(location: match.range.location, length: match.range.length - 1)
-            var text = (originalString as NSString).substringWithRange(match.range)
-            text = text.stringByReplacingOccurrencesOfString("[", withString: "").stringByReplacingOccurrencesOfString("]", withString: "").stringByReplacingOccurrencesOfString("-", withString: "").stringByReplacingOccurrencesOfString(" ", withString: "")
-            attributedString.beginEditing()
-            attributedString.addAttribute(NSLinkAttributeName, value: "map://\(text)", range: matchRange)
-            attributedString.addAttribute(NSForegroundColorAttributeName, value: UIColor.whiteColor(), range: matchRange)
-            attributedString.addAttribute(NSUnderlineStyleAttributeName, value: 1, range: matchRange)
-            attributedString.endEditing()
+        let textRange = NSRange(location: 0, length: attributedString.length)
+        do {
+            let regex = try NSRegularExpression(pattern: "\\[(.*?)\\]", options: [])
+            
+            let matches = regex.matchesInString(originalString, options: NSMatchingOptions.WithoutAnchoringBounds, range: textRange)
+            attributedString.addAttributes([NSForegroundColorAttributeName: UIColor.whiteColor()], range: textRange)
+            
+            for match in matches {
+                let matchRange = NSRange(location: match.range.location, length: match.range.length - 1)
+                var text = (originalString as NSString).substringWithRange(match.range)
+                text = text.stringByReplacingOccurrencesOfString("[", withString: "").stringByReplacingOccurrencesOfString("]", withString: "").stringByReplacingOccurrencesOfString("-", withString: "").stringByReplacingOccurrencesOfString(" ", withString: "")
+                attributedString.beginEditing()
+                attributedString.addAttribute(NSLinkAttributeName, value: "map://\(text)", range: matchRange)
+                attributedString.addAttribute(NSForegroundColorAttributeName, value: UIColor.whiteColor(), range: matchRange)
+                attributedString.addAttribute(NSUnderlineStyleAttributeName, value: 1, range: matchRange)
+                attributedString.endEditing()
+            }
+            attributedString.mutableString.replaceOccurrencesOfString("]", withString: "", options: NSStringCompareOptions.CaseInsensitiveSearch, range: NSRange(location: 0, length: attributedString.mutableString.length))
+            attributedString.mutableString.replaceOccurrencesOfString("[", withString: "", options: NSStringCompareOptions.CaseInsensitiveSearch, range: NSRange(location: 0, length: attributedString.mutableString.length))
+        } catch {
+            print("no")
         }
-        attributedString.mutableString.replaceOccurrencesOfString("]", withString: "", options: NSStringCompareOptions.CaseInsensitiveSearch, range: NSRange(location: 0, length: attributedString.mutableString.length))
-        attributedString.mutableString.replaceOccurrencesOfString("[", withString: "", options: NSStringCompareOptions.CaseInsensitiveSearch, range: NSRange(location: 0, length: attributedString.mutableString.length))
 
         
         return attributedString
@@ -104,8 +108,8 @@ class CabinetViewController: UICollectionViewController {
             return false
         }
         var select = true
-        for path in collectionView.indexPathsForSelectedItems() {
-            collectionView.deselectItemAtIndexPath((path as! NSIndexPath), animated: true)
+        for path in collectionView.indexPathsForSelectedItems()! {
+            collectionView.deselectItemAtIndexPath(path, animated: true)
             collectionView.delegate?.collectionView!(collectionView, didDeselectItemAtIndexPath: indexPath)
             select = false
         }
@@ -133,7 +137,7 @@ extension CabinetViewController: CabinetDelegate {
     
     func moreInfoButtonPressed(card: CardObject) {
         if let moreVC: UIViewController.Type = card.moreInfoViewController {
-            self.presentViewController(moreVC(), animated: true, completion: nil)
+            self.presentViewController(moreVC.init(), animated: true, completion: nil)
         }
     }
     

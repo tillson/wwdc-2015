@@ -18,18 +18,6 @@
 		C54E5E161AECBFF7001C64E2 /* skills.txt in Resources */ = {isa = PBXBuildFile; fileRef = C54E5E0F1AECBFF7001C64E2 /* skills.txt */; };
 		C54E5E171AECBFF7001C64E2 /* timeline.json in Resources */ = {isa = PBXBuildFile; fileRef = C54E5E101AECBFF7001C64E2 /* timeline.json */; };
 		C54E5E1B1AECC075001C64E2 /* CardObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54E5E1A1AECC075001C64E2 /* CardObject.swift */; };
-		C54E5E271AECC12F001C64E2 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54E5E231AECC12F001C64E2 /* Array.swift */; };
-		C54E5E281AECC12F001C64E2 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54E5E241AECC12F001C64E2 /* Operators.swift */; };
-		C54E5E291AECC12F001C64E2 /* Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54E5E251AECC12F001C64E2 /* Optional.swift */; };
-		C54E5E2A1AECC12F001C64E2 /* Runes-License in Resources */ = {isa = PBXBuildFile; fileRef = C54E5E261AECC12F001C64E2 /* Runes-License */; };
-		C54E5E341AECC14A001C64E2 /* Animatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54E5E2B1AECC14A001C64E2 /* Animatable.swift */; };
-		C54E5E351AECC14A001C64E2 /* AnimatableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54E5E2C1AECC14A001C64E2 /* AnimatableImageView.swift */; };
-		C54E5E361AECC14A001C64E2 /* AnimatedFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54E5E2D1AECC14A001C64E2 /* AnimatedFrame.swift */; };
-		C54E5E371AECC14A001C64E2 /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54E5E2E1AECC14A001C64E2 /* Animator.swift */; };
-		C54E5E381AECC14A001C64E2 /* Curry.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54E5E2F1AECC14A001C64E2 /* Curry.swift */; };
-		C54E5E391AECC14A001C64E2 /* gify-License in Resources */ = {isa = PBXBuildFile; fileRef = C54E5E311AECC14A001C64E2 /* gify-License */; };
-		C54E5E3A1AECC14A001C64E2 /* ImageSourceHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54E5E321AECC14A001C64E2 /* ImageSourceHelpers.swift */; };
-		C54E5E3B1AECC14A001C64E2 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54E5E331AECC14A001C64E2 /* UIImageExtension.swift */; };
 		C54E5E411AECC167001C64E2 /* FBShimmeringLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = C54E5E3E1AECC167001C64E2 /* FBShimmeringLayer.m */; };
 		C54E5E421AECC167001C64E2 /* FBShimmeringView.m in Sources */ = {isa = PBXBuildFile; fileRef = C54E5E401AECC167001C64E2 /* FBShimmeringView.m */; };
 		C54E5E451AECC183001C64E2 /* PassbookLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = C54E5E441AECC183001C64E2 /* PassbookLayout.m */; };
@@ -77,19 +65,6 @@
 		C54E5E0F1AECBFF7001C64E2 /* skills.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = skills.txt; path = Assets/skills.txt; sourceTree = "<group>"; };
 		C54E5E101AECBFF7001C64E2 /* timeline.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = timeline.json; path = Assets/timeline.json; sourceTree = "<group>"; };
 		C54E5E1A1AECC075001C64E2 /* CardObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CardObject.swift; path = Model/CardObject.swift; sourceTree = "<group>"; };
-		C54E5E231AECC12F001C64E2 /* Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Array.swift; path = Utilities/Runes/Array.swift; sourceTree = "<group>"; };
-		C54E5E241AECC12F001C64E2 /* Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = Utilities/Runes/Operators.swift; sourceTree = "<group>"; };
-		C54E5E251AECC12F001C64E2 /* Optional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Optional.swift; path = Utilities/Runes/Optional.swift; sourceTree = "<group>"; };
-		C54E5E261AECC12F001C64E2 /* Runes-License */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "Runes-License"; path = "Utilities/Runes/Runes-License"; sourceTree = "<group>"; };
-		C54E5E2B1AECC14A001C64E2 /* Animatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Animatable.swift; path = Utilities/gify/Animatable.swift; sourceTree = "<group>"; };
-		C54E5E2C1AECC14A001C64E2 /* AnimatableImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnimatableImageView.swift; path = Utilities/gify/AnimatableImageView.swift; sourceTree = "<group>"; };
-		C54E5E2D1AECC14A001C64E2 /* AnimatedFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnimatedFrame.swift; path = Utilities/gify/AnimatedFrame.swift; sourceTree = "<group>"; };
-		C54E5E2E1AECC14A001C64E2 /* Animator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Animator.swift; path = Utilities/gify/Animator.swift; sourceTree = "<group>"; };
-		C54E5E2F1AECC14A001C64E2 /* Curry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Curry.swift; path = Utilities/gify/Curry.swift; sourceTree = "<group>"; };
-		C54E5E301AECC14A001C64E2 /* Gifu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Gifu.h; path = Utilities/gify/Gifu.h; sourceTree = "<group>"; };
-		C54E5E311AECC14A001C64E2 /* gify-License */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "gify-License"; path = "Utilities/gify/gify-License"; sourceTree = "<group>"; };
-		C54E5E321AECC14A001C64E2 /* ImageSourceHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageSourceHelpers.swift; path = Utilities/gify/ImageSourceHelpers.swift; sourceTree = "<group>"; };
-		C54E5E331AECC14A001C64E2 /* UIImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIImageExtension.swift; path = Utilities/gify/UIImageExtension.swift; sourceTree = "<group>"; };
 		C54E5E3C1AECC167001C64E2 /* FBShimmering.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FBShimmering.h; path = Utilities/Shimmer/FBShimmering.h; sourceTree = "<group>"; };
 		C54E5E3D1AECC167001C64E2 /* FBShimmeringLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FBShimmeringLayer.h; path = Utilities/Shimmer/FBShimmeringLayer.h; sourceTree = "<group>"; };
 		C54E5E3E1AECC167001C64E2 /* FBShimmeringLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FBShimmeringLayer.m; path = Utilities/Shimmer/FBShimmeringLayer.m; sourceTree = "<group>"; };
@@ -240,8 +215,6 @@
 			isa = PBXGroup;
 			children = (
 				C58135CE1AEC885100065633 /* Shimmer */,
-				C5CFBA201AE4AE6200F131C5 /* Runes */,
-				C5CFBA1F1AE4AE1E00F131C5 /* gify */,
 				C511407B1ADDFFA700D76B7E /* Passbook */,
 			);
 			name = APIs;
@@ -280,33 +253,6 @@
 				C54E5E401AECC167001C64E2 /* FBShimmeringView.m */,
 			);
 			name = Shimmer;
-			sourceTree = "<group>";
-		};
-		C5CFBA1F1AE4AE1E00F131C5 /* gify */ = {
-			isa = PBXGroup;
-			children = (
-				C54E5E2B1AECC14A001C64E2 /* Animatable.swift */,
-				C54E5E2C1AECC14A001C64E2 /* AnimatableImageView.swift */,
-				C54E5E2D1AECC14A001C64E2 /* AnimatedFrame.swift */,
-				C54E5E2E1AECC14A001C64E2 /* Animator.swift */,
-				C54E5E2F1AECC14A001C64E2 /* Curry.swift */,
-				C54E5E301AECC14A001C64E2 /* Gifu.h */,
-				C54E5E311AECC14A001C64E2 /* gify-License */,
-				C54E5E321AECC14A001C64E2 /* ImageSourceHelpers.swift */,
-				C54E5E331AECC14A001C64E2 /* UIImageExtension.swift */,
-			);
-			name = gify;
-			sourceTree = "<group>";
-		};
-		C5CFBA201AE4AE6200F131C5 /* Runes */ = {
-			isa = PBXGroup;
-			children = (
-				C54E5E231AECC12F001C64E2 /* Array.swift */,
-				C54E5E241AECC12F001C64E2 /* Operators.swift */,
-				C54E5E251AECC12F001C64E2 /* Optional.swift */,
-				C54E5E261AECC12F001C64E2 /* Runes-License */,
-			);
-			name = Runes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -353,7 +299,8 @@
 		C511403D1ADDC6AC00D76B7E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Tillson Galloway";
 				TargetAttributes = {
 					C51140441ADDC6AC00D76B7E = {
@@ -396,13 +343,11 @@
 				C54E5E591AECC1B0001C64E2 /* Main.storyboard in Resources */,
 				C54E5E121AECBFF7001C64E2 /* backbutton-selected.gif in Resources */,
 				C51140521ADDC6AD00D76B7E /* Images.xcassets in Resources */,
-				C54E5E2A1AECC12F001C64E2 /* Runes-License in Resources */,
 				C54E5E161AECBFF7001C64E2 /* skills.txt in Resources */,
 				C54E5E5B1AECC1B0001C64E2 /* PassCard.xib in Resources */,
 				C54E5E111AECBFF7001C64E2 /* backbutton.gif in Resources */,
 				C54E5E141AECBFF7001C64E2 /* game.txt in Resources */,
 				C54E5E131AECBFF7001C64E2 /* bio.txt in Resources */,
-				C54E5E391AECC14A001C64E2 /* gify-License in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,28 +369,18 @@
 				C54E5E611AECC2BA001C64E2 /* OpeningTransitionManager.swift in Sources */,
 				C54E5E5C1AECC1B0001C64E2 /* PastWorkScroll.swift in Sources */,
 				C54E5E1B1AECC075001C64E2 /* CardObject.swift in Sources */,
-				C54E5E361AECC14A001C64E2 /* AnimatedFrame.swift in Sources */,
-				C54E5E3B1AECC14A001C64E2 /* UIImageExtension.swift in Sources */,
 				C54E5E521AECC1A4001C64E2 /* TimedTestViewController.swift in Sources */,
 				C54E5E5F1AECC2B5001C64E2 /* PocketTransitionManager.swift in Sources */,
-				C54E5E381AECC14A001C64E2 /* Curry.swift in Sources */,
 				C54E5E531AECC1A4001C64E2 /* ViewController.swift in Sources */,
-				C54E5E341AECC14A001C64E2 /* Animatable.swift in Sources */,
 				C54E5E511AECC1A4001C64E2 /* PastWorkViewController.swift in Sources */,
 				C54E5E5A1AECC1B0001C64E2 /* PassCard.swift in Sources */,
 				C54E5E501AECC1A4001C64E2 /* GameViewController.swift in Sources */,
-				C54E5E281AECC12F001C64E2 /* Operators.swift in Sources */,
 				C54E5E631AECC2D5001C64E2 /* Utilities.swift in Sources */,
-				C54E5E351AECC14A001C64E2 /* AnimatableImageView.swift in Sources */,
-				C54E5E371AECC14A001C64E2 /* Animator.swift in Sources */,
-				C54E5E291AECC12F001C64E2 /* Optional.swift in Sources */,
 				C54E5E411AECC167001C64E2 /* FBShimmeringLayer.m in Sources */,
 				C54E5E421AECC167001C64E2 /* FBShimmeringView.m in Sources */,
 				C54E5E471AECC190001C64E2 /* PastWorkDelegate.swift in Sources */,
 				C54E5E4F1AECC1A4001C64E2 /* CabinetViewController.swift in Sources */,
 				C54E5E451AECC183001C64E2 /* PassbookLayout.m in Sources */,
-				C54E5E3A1AECC14A001C64E2 /* ImageSourceHelpers.swift in Sources */,
-				C54E5E271AECC12F001C64E2 /* Array.swift in Sources */,
 				C511404B1ADDC6AD00D76B7E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -501,6 +436,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -575,6 +511,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "./**";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tillsongalloway.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Tillson Galloway/Tillson Galloway-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -595,6 +532,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "./**";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tillsongalloway.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Tillson Galloway/Tillson Galloway-Bridging-Header.h";
 			};
@@ -614,6 +552,7 @@
 				);
 				INFOPLIST_FILE = "Tillson GallowayTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tillsongalloway.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tillson Galloway.app/Tillson Galloway";
 			};
@@ -629,6 +568,7 @@
 				);
 				INFOPLIST_FILE = "Tillson GallowayTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tillsongalloway.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tillson Galloway.app/Tillson Galloway";
 			};

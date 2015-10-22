@@ -14,7 +14,7 @@ class PastWorkScroll: UIView {
     @IBOutlet var timedTestImage: UIImageView!
     @IBOutlet var openSourceImage: UIImageView!
 
-    @IBOutlet var signedInTechImageView: AnimatableImageView!
+    @IBOutlet var signedInTechImageView: UIImageView!
     
     @IBOutlet var commitNumbers: UILabel!
     
@@ -49,7 +49,7 @@ class PastWorkScroll: UIView {
         let url = NSURL(string: "http://tillsongalloway.com/api/GithubCommits.php?git")
         
         let task = NSURLSession.sharedSession().dataTaskWithURL(url!) {(data, response, error) in
-            let num = NSString(data: data, encoding: NSUTF8StringEncoding)! as String
+            let num = NSString(data: data!, encoding: NSUTF8StringEncoding)! as String
             dispatch_async(dispatch_get_main_queue(), {
                 self.commitNumbers.text = num
             })
